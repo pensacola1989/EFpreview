@@ -16,7 +16,7 @@
     },
     "Content": {
         "StimulusItemType": "Image",
-        "Stimulus": "/ActivityResources/12715/1.png",
+        "Stimulus": "../images/test.png",
         "Questions": [
             {
                 "Title": "What is Michael’s family name?",

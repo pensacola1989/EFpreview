@@ -92,9 +92,7 @@ Preview.Common.render = function (data,callback) {
 	var init = function () {
 		var len = data.Content.Questions.length;
 		renderHeader();	
-		Preview.Common.makeProgress(len,function () {
-		//	alert(Preview.index);
-		});
+		Preview.Common.makeProgress(len,callback);
 	//	renderProgressBar();
 	};
 
