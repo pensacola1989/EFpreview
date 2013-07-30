@@ -1,0 +1,88 @@
+/*
+ * 1. Content.Questoins.StimulusItemType can be Text, Audio
+ * 2. The Content.Questions.DropzoneStimulusItemType can be Image or Text
+ * 3. The Content.Questions.ResponseItemType can be Image or Text
+ * 4. Common.TimeElapsed is by millisecond
+ */
+{
+    "Common": {
+        "MetaTag": "B1F019",
+        "ActivityType": "MatchWithOneStimuli",
+        "Title": "Restaurant Complaints",
+        "Instruction": "Listen and match the complaints to the pictures.",
+        "ActivityId": "12714",
+        "TemplateId": "101",
+        "StudentId": "12321",
+        "Score": "40",
+        "PointsAchieved": "2",
+        "ActivityPoints": "5",
+        "StartTime": "Tue, 26 Mar 2013 09:30:05 -0800",
+        "EndTime": "Tue, 26 Mar 2013 09:30:05 -0800",
+        "TimeElapsed": "60000"
+    },
+    "Content": {
+        "Question": [
+            {
+                "Title": "Listen and match the pictures.",
+                "StimulusItemType": "Audio",
+                "Stimulus": "/ActivityResources/12714/BK1_Ch1-2_L1_Q1.mp3",
+                "DropzoneStimulusItemType": "Image",
+                "DropzoneStimuli": [
+                    {
+                        "ItemContent": "/ActivityResources/12714/Q1.png",
+                        "Id": "1",
+                        "ResponseId": "1",
+                        "AnswerId": "1"
+                    },
+                    {
+                        "ItemContent": "/ActivityResources/12714/Q2.png",
+                        "Id": "2",
+                        "ResponseId": "2",
+                        "AnswerId": "2"
+                    },
+                    {
+                        "ItemContent": "/ActivityResources/12714/Q3.png",
+                        "Id": "3",
+                        "ResponseId": "3",
+                        "AnswerId": "4"
+                    },
+                    {
+                        "ItemContent": "/ActivityResources/12715/Q4.png",
+                        "Id": "4",
+                        "ResponseId": "4",
+                        "AnswerId": "5"
+                    },
+                    {
+                        "ItemContent": "/ActivityResources/12715/Q5.png",
+                        "Id": "5",
+                        "ResponseId": "5",
+                        "AnswerId": "-1"
+                    }
+                ],
+                "ResponseItemType": "Text",
+                "Responses": [
+                    {
+                        "ItemContent": "There are two pens and a pencil.",
+                        "Id": "1"
+                    },
+                    {
+                        "ItemContent": "There are two pencils and an eraser.",
+                        "Id": "2"
+                    },
+                    {
+                        "ItemContent": "There are three pencils and two pens.",
+                        "Id": "3"
+                    },
+                    {
+                        "ItemContent": "There are two erasers and pens.",
+                        "Id": "4"
+                    },
+                    {
+                        "ItemContent": "There are two erasers and a pen.",
+                        "Id": "5"
+                    }
+                ]
+            }
+        ]
+    }
+}

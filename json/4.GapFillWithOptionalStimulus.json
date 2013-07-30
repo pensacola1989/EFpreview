@@ -1,0 +1,61 @@
+/*
+ 1. Stimulus could either be per activity or per question. When it is per activity, the details of stimulus are populated at Content.Stimulus 
+        and Content.Questions.Stimulus would be left empty and vice versa. Content.StimulusItemtype can be Audio, Text or None.
+ * 2. the text with <gap> tag is the text should be filled
+ * 3. the Response.Fill is the text list for filling
+ */
+{
+    "Common": {
+        "MetaTag": "B1F019",
+        "ActivityType": "GapFillWithOptionalStimulus",
+        "Title": "Activity Title",
+        "Instruction": "Activity Instruction",
+        "ActivityId": "12716",
+        "TemplateId": "103"
+    },
+    "Content": {
+        "StimulusItemType": "None",
+        "Stimulus": "",
+        "Questions": [
+            {
+                "Title": "What is Michael’s family name?",
+                "Stimulus": "",
+                "Response": {
+                    "ItemContent": "Jim: Did you try<gap>out</gap><gap>for</gap> the swimming club? <br/> <br/> Sabrina: Yeah, on Saturday. <br/> <br/> Jim: And? <br/> <br/> Sabrina: I still don’t know if I made it. <br/> <br/> Jim: When do you think you’ll know? <br/> <br/> Sabrina: I’m not sure. I want to call the club leader and find<gap>out</gap> , but I’m too nervous. <br/> <br/> Jim: Did you swim well? <br/> <br/> Sabrina: I swam really slowly at first, and I had trouble keeping<gap>up</gap><gap>with</gap> the other swimmers. <br/> <br/> Jim: Oh … <br/> <br/> Sabrina: But near the end of the race I sped<gap>up</gap> . <br/> <br/> Jim: What happened next? <br/> <br/> Sabrina: I had the lead, but then I gave<gap>it</gap><gap>up</gap> in the last minute. I came in second. <br/> <br/> Jim: Second is a good result, and it’s great that you took the challenge<gap>on</gap> . <br/> <br/> Sabrina: It might not be good enough to make<gap>it</gap><gap>into</gap> the club. <br/> <br/> Jim: I think you’ve got a great chance. But even if you don’t, keep<gap>at</gap> it. You’re a great swimmer. <br/> <br/> Sabrina: I’ll see. I hope so. <br/> <br/>",
+                    "Fill": [
+                        "out",
+                        "for",
+                        "up",
+                        "with",
+                        "it",
+                        "on",
+                        "into",
+                        "at",
+                        "hope",
+                        "so"
+                    ]
+                }
+            },
+            {
+                "Title": "How old is Michael?",
+                "Stimulus": "",
+                "Response": {
+                    "ItemType": "Text",
+                    "ItemContent": "Jim: Did you try<gap>out</gap><gap>for</gap> the swimming club? <br/> <br/> Sabrina: Yeah, on Saturday. <br/> <br/> Jim: And? <br/> <br/> Sabrina: I still don’t know if I made it. <br/> <br/> Jim: When do you think you’ll know? <br/> <br/> Sabrina: I’m not sure. I want to call the club leader and find<gap>out</gap> , but I’m too nervous. <br/> <br/> Jim: Did you swim well? <br/> <br/> Sabrina: I swam really slowly at first, and I had trouble keeping<gap>up</gap><gap>with</gap> the other swimmers. <br/> <br/> Jim: Oh … <br/> <br/> Sabrina: But near the end of the race I sped<gap>up</gap> . <br/> <br/> Jim: What happened next? <br/> <br/> Sabrina: I had the lead, but then I gave<gap>it</gap><gap>up</gap> in the last minute. I came in second. <br/> <br/> Jim: Second is a good result, and it’s great that you took the challenge<gap>on</gap> . <br/> <br/> Sabrina: It might not be good enough to make<gap>it</gap><gap>into</gap> the club. <br/> <br/> Jim: I think you’ve got a great chance. But even if you don’t, keep<gap>at</gap> it. You’re a great swimmer. <br/> <br/> Sabrina: I’ll see. I hope so. <br/> <br/>",
+                    "Fill": [
+                        "out",
+                        "for",
+                        "up",
+                        "with",
+                        "it",
+                        "on",
+                        "into",
+                        "at",
+                        "hope",
+                        "so"
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+.choice_sti{float:left;width:280px;height:560px;margin-left:50px;margin-top:30px;}
+.choice_res{float:right;height:560px;width:600px;margin-right:50px;margin-top:30px;}
+.choice_sti img{max-width:280px;}
+.unselect.res_item{border:1px solid #409fcf;height:48px;margin-bottom:10px;font-weight:bold;background-color:#409fcf;color:#FFF;text-align:center;line-height:48px;border-radius:3px;-moz-box-shadow: 1px 5px 6px -5px #000;
+-webkit-box-shadow: 1px 5px 6px -5px #000;
+box-shadow: 1px 5px 6px -5px #000;}
+.select.res_item{width:560px;margin-left:20px;height:40px;border:1px solid #409fcf;margin-bottom:10px;font-weight:bold;background-color:#30789c;color:#FFF;text-align:center;line-height:40px;border-radius:3px;}

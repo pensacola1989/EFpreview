@@ -1,0 +1,157 @@
+/*
+ * 1. Stimulus could either be per activity or per question. When it is per activity, the details of stimulus are populated at Content.Stimulus 
+        and Content.Questions.Stimulus would be left empty and vice versa. Content.StimulusItemtype can be Image, Audio or Text.
+ * 2. The Content.ResponseItemType can be Text or Image
+ * 3. Word limit for the text stimuli: FR 500 words, TB 350 words, NHF 100 words
+ * 4. The Question length: min 1 max 5
+ * 5. The Responses(with Text) length: min 3 max 8, The Responses(with Image) length: min 3 max 6.
+ * 6. Common.TimeElapsed is by millisecond
+ */
+{
+    "Common": {
+        "MetaTag": "B1F019",
+        "ActivityType": "MultipleChoiceWithStimulus",
+        "Title": "Activity Title",
+        "Instruction": "Activity Instruction",
+        "ActivityId": "12715",
+        "TemplateId": "102",
+        "StudentId": "12321",
+        "Score": "40",
+        "PointsAchieved": "2",
+        "ActivityPoints": "5",
+        "StartTime": "Tue, 26 Mar 2013 09:30:05 -0800",
+        "EndTime": "Tue, 26 Mar 2013 09:30:05 -0800",
+        "TimeElapsed": "60000"
+    },
+    "Content": {
+        "StimulusItemType": "Image",
+        "Stimulus": "/ActivityResources/12715/1.png",
+        "Questions": [
+            {
+                "Title": "What is Michael’s family name?",
+                "Stimulus": "",
+                "ResponseItemType": "Text",
+                "Responses": [
+                    {
+                        "ItemContent": "Nixon",
+                        "Id": "1",
+                        "IsAnswer": "true",
+                        "IsSelected": "true"
+                    },
+                    {
+                        "ItemContent": "Greenville",
+                        "Id": "2",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "Hockey",
+                        "Id": "3",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    }
+                ]
+            },
+            {
+                "Title": "How old is Michael?",
+                "Stimulus": "",
+                "ResponseItemType": "Text",
+                "Responses": [
+                    {
+                        "ItemContent": "9",
+                        "Id": "1",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "10",
+                        "Id": "2",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "12",
+                        "Id": "3",
+                        "IsAnswer": "true",
+                        "IsSelected": "true"
+                    }
+                ]
+            },
+            {
+                "Title": "Where is Michael from?",
+                "Stimulus": "",
+                "ResponseItemType": "Text",
+                "Responses": [
+                    {
+                        "ItemContent": "China",
+                        "Id": "1",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "Russia",
+                        "Id": "2",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "The USA",
+                        "Id": "3",
+                        "IsAnswer": "true",
+                        "IsSelected": "true"
+                    }
+                ]
+            },
+            {
+                "Title": "What does his father do?",
+                "Stimulus": "",
+                "ResponseItemType": "Text",
+                "Responses": [
+                    {
+                        "ItemContent": "Doctor",
+                        "Id": "1",
+                        "IsAnswer": "false",
+                        "IsSelected": "true"
+                    },
+                    {
+                        "ItemContent": "Photographer",
+                        "Id": "2",
+                        "IsAnswer": "true",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "Swimmer",
+                        "Id": "3",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    }
+                ]
+            },
+            {
+                "Title": "What color does Michael like?",
+                "Stimulus": "",
+                "ResponseItemType": "Text",
+                "Responses": [
+                    {
+                        "ItemContent": "blue",
+                        "Id": "1",
+                        "IsAnswer": "false",
+                        "IsSelected": "true"
+                    },
+                    {
+                        "ItemContent": "green",
+                        "Id": "2",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "red",
+                        "Id": "3",
+                        "IsAnswer": "true",
+                        "IsSelected": "false"
+                    }
+                ]
+            }
+        ]
+    }
+}

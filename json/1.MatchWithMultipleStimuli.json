@@ -1,0 +1,72 @@
+/*
+ * 1. The Content.Questions.StimulusItemType can be Audio,Image or Text
+ * 2. The Content.Questions.ResponseItemType can be Audio,Image or Text
+ */
+{
+    "Common": {
+        "MetaTag": "B1F019",
+        "ActivityType": "MatchWithMultipleStimuli",
+        "Title": "Restaurant Complaints",
+        "Instruction": "Listen and match the complaints to the pictures.",
+        "ActivityId": "12713",
+        "TemplateId": "100"
+    },
+    "Content": {
+        "Questions": [
+            {
+                "Title": "Listen and match the pictures.",
+                "StimulusItemType": "Audio",
+                "Stimuli": [
+                    {
+                        "ItemContent": "/ActivityResources/12713/BK1_Ch1-2_L1_Q1.mp3",
+                        "Id": "1",
+                        "ResponseId": "1"
+                    },
+                    {
+                        "ItemContent": "/ActivityResources/12713/BK1_Ch1-2_L1_Q2.mp3",
+                        "Id": "2",
+                        "ResponseId": "2"
+                    },
+                    {
+                        "ItemContent": "/ActivityResources/12713/BK1_Ch1-2_L1_Q3.mp3",
+                        "Id": "3",
+                        "ResponseId": "3"
+                    },
+                    {
+                        "ItemContent": "/ActivityResources/12713/BK1_Ch1-2_L1_Q4.mp3",
+                        "Id": "4",
+                        "ResponseId": "4"
+                    },
+                    {
+                        "ItemContent": "/ActivityResources/12713/BK1_Ch1-2_L1_Q5.mp3",
+                        "Id": "5",
+                        "ResponseId": "5"
+                    }
+                ],
+                "ResponseItemType": "Image",
+                "Responses": [
+                    {
+                        "ItemContent": "/ActivityResources/12713/A1M1L6S16_002-013-01.jpg",
+                        "Id": "1"
+                    },
+                    {
+                        "ItemContent": "/ActivityResources/12713/A1M1L6S16_002-013-02.jpg",
+                        "Id": "2"
+                    },
+                    {
+                        "ItemContent": "/ActivityResources/12713/A1M1L6S16_002-013-03.jpg",
+                        "Id": "3"
+                    },
+                    {
+                        "ItemContent": "/ActivityResources/12713/A1M1L6S16_002-013-04.jpg",
+                        "Id": "4"
+                    },
+                    {
+                        "ItemContent": "/ActivityResources/12713/A1M1L6S16_002-013-05.jpg",
+                        "Id": "5"
+                    }
+                ]
+            }
+        ]
+    }
+}

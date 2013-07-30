@@ -1,0 +1,49 @@
+/*
+ * 1. The Content.Stimulus is empty or the audio url
+ * 2. The correct Response  Sequence will be ordered by Responses[x].Id
+ */
+{
+    "Common": {
+        "MetaTag": "B1F019",
+        "ActivityType": "SequencingWithOptionalStimulus",
+        "Title": "Activity Title",
+        "Instruction": "Activity Instruction",
+        "ActivityId": "12716",
+        "TemplateId": "104"
+    },
+    "Content": {
+        "Stimulus": "",
+        "Questions": [
+            {
+                "Title": "What is Michael’s family name?",
+                "Responses": [
+                    {
+                        "ItemContent": "some text 1",
+                        "Order":"1",
+                        "IsDistractor":"false"
+                    },
+                    {
+                        "ItemContent": "some text 2",
+                        "Order":"2",
+                        "IsDistractor":"false"
+                    },
+                    {
+                        "ItemContent": "some text 3",
+                        "Order":"3",
+                        "IsDistractor":"false"
+                    },
+                    {
+                        "ItemContent": "some text 4",
+                        "Order":"4",
+                        "IsDistractor":"true"
+                    },
+                    {
+                        "ItemContent": "some text 5",
+                        "Order":"-1",
+                        "IsDistractor":"true"
+                    }
+                ]
+            }
+        ]
+    }
+}

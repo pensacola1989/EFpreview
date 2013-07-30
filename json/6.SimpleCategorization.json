@@ -1,0 +1,87 @@
+/*
+ * 1. Content.StimulusItemType can be Audio or Text
+ * 2. Content.Questions[x].ResponseFillItemType can be Text or Image
+ */
+{
+    "Common": {
+        "MetaTag": "B1F019",
+        "ActivityType": "SimpleCategorization",
+        "Title": "Activity Title",
+        "Instruction": "Activity Instruction",
+        "ActivityId": "12716",
+        "TemplateId": "105"
+    },
+    "Content": {
+        "StimulusItemType":"Text",
+        "Stimulus":"text here",
+        "Questions": [
+            {
+                "Title": "What is Michael’s family name?",
+                "Categories": [
+                    {
+                        "ItemContent": "Category Heading",
+                        "Id":"1"
+                    },
+                    {
+                        "ItemContent": "Category Heading",
+                        "Id":"2"
+                    },
+                    {
+                        "ItemContent": "Category Heading",
+                        "Id":"3"
+                    }
+                ],
+                "ResponseFillItemType":"Text",
+                "ResponseFills":[
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"1",
+                        "CategoryId":"1",
+                        "IsFixed":"false"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"2",
+                        "CategoryId":"1",
+                        "IsFixed":"false"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"3",
+                        "CategoryId":"1",
+                        "IsFixed":"false"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"4",
+                        "CategoryId":"2",
+                        "IsFixed":"false"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"5",
+                        "CategoryId":"2",
+                        "IsFixed":"false"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"6",
+                        "CategoryId":"3",
+                        "IsFixed":"true"
+                    }
+                    ,{
+                        "ItemContent": "Text Content",
+                        "Id":"7",
+                        "CategoryId":"3",
+                        "IsFixed":"false"
+                    },{
+                        "ItemContent": "Text Content",
+                        "Id":"7",
+                        "CategoryId":"-1",
+                        "IsFixed":"false"
+                    }
+                ]
+            }
+        ]
+    }
+}

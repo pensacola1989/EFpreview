@@ -1,0 +1,63 @@
+/*
+ * 1. The Content.Stimulus is null or the audio url
+ * 2. The correct Response  Sequence will be ordered by Response[x].Id
+ * 3. Response[x].ResponseOrder is the answer student submitted
+ * 4. Common.TimeElapsed is by millisecond
+ */
+{
+    "Common": {
+        "MetaTag": "B1F019",
+        "ActivityType": "SequencingWithOptionalStimulus",
+        "Title": "Activity Title",
+        "Instruction": "Activity Instruction",
+        "ActivityId": "12716",
+        "TemplateId": "104",
+        "StudentId":"12321",
+        "Score":"40",
+        "PointsAchieved":"2",
+        "ActivityPoints":"5",
+        "StartTime": "Tue, 26 Mar 2013 09:30:05 -0800",
+        "EndTime": "Tue, 26 Mar 2013 09:30:05 -0800",
+        "TimeElapsed": "60000"
+    },
+    "Content": {
+        "Stimulus": "",
+        "Questions": [
+            {
+                "Title": "What is Michael’s family name?",
+                "Responses": [
+                    {
+                        "ItemContent": "some text 1",
+                        "Order":"1",
+                        "IsDistractor":"false",
+                        "ResponseOrder":"3"
+                    },
+                    {
+                        "ItemContent": "some text 2",
+                        "Order":"2",
+                        "IsDistractor":"false",
+                        "ResponseOrder":"1"
+                    },
+                    {
+                        "ItemContent": "some text 3",
+                        "Order":"3",
+                        "IsDistractor":"false",
+                        "ResponseOrder":"2"
+                    },
+                    {
+                        "ItemContent": "some text 4",
+                        "Order":"4",
+                        "IsDistractor":"true",
+                        "ResponseOrder":"-1"
+                    },
+                    {
+                        "ItemContent": "some text 5",
+                        "Order":"-1",
+                        "IsDistractor":"true",
+                        "ResponseOrder":"-1"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,115 @@
+/*
+ * 1. Content.StimulusItemType can be Audio or Text
+ * 2. Content.Questions[x].Responses[x].ItemType can be ColumnTitle,RowLabel,Cell
+ */
+{
+    "Common": {
+        "MetaTag": "B1F019",
+        "ActivityType": "ComplexCategorization",
+        "Title": "Activity Title",
+        "Instruction": "Activity Instruction",
+        "ActivityId": "12716",
+        "TemplateId": "106"
+    },
+    "Content": {
+        "StimulusItemType":"Text",
+        "Stimulus": "Text Here",
+        "Questions": [
+            {
+                "Title": "What is Michael’s family name?",
+                "Responses": [
+                    [
+                        {
+                            "ItemType": "ColumnTitle",
+                            "ItemContent": "Category Heading",
+                            "Id":"1"
+                        },
+                        {
+                            "ItemType": "ColumnTitle",
+                            "ItemContent": "Category Heading",
+                            "Id":"2"
+                        },
+                        {
+                            "ItemType": "ColumnTitle",
+                            "ItemContent": "Category Heading",
+                            "Id":"3"
+                        }
+                    ],
+                    [
+                        {
+                            "ItemType": "RowLabel",
+                            "ItemContent": "Row Label 1",
+                            "Id":"4"
+                        },
+                        {
+                            "ItemType": "Cell",
+                            "ItemContent": "",
+                            "Id":"5"
+                        },
+                        {
+                            "ItemType": "Cell",
+                            "ItemContent": "",
+                            "Id":"6"
+                        }
+                    ],
+                    [
+                        {
+                            "ItemType": "RowLabel",
+                            "ItemContent": "Row Label 2",
+                            "Id":"7"
+                        },
+                        {
+                            "ItemType": "Cell",
+                            "ItemContent": "",
+                            "Id":"8"
+                        },
+                        {
+                            "ItemType": "Cell",
+                            "ItemContent": "fixed content here",
+                            "Id":"9"
+                        }
+                    ],
+
+                ],
+                "ResponseFill":[
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"1",
+                        "ParentId":"5",
+                        "IsFixed":"false"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"2",
+                        "ParentId":"6",
+                        "IsFixed":"true"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"3",
+                        "ParentId":"8",
+                        "IsFixed":"false"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"4",
+                        "ParentId":"-1",
+                        "IsFixed":"false"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"5",
+                        "ParentId":"-1",
+                        "IsFixed":"false"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"6",
+                        "ParentId":"-1",
+                        "IsFixed":"false"
+                    }
+                ]
+            }
+        ]
+    }
+}
