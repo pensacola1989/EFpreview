@@ -21,22 +21,22 @@
             {
                 "Title": "What is Michael’s family name?",
                 "Stimulus": "",
-                "ResponseItemType": "Text",
+                "ResponseItemType": "Image",
                 "Responses": [
                     {
-                        "ItemContent": "Nixon",
+                        "ItemContent": "../images/avril.jpg",
                         "Id": "1",
                         "IsAnswer": "true",
                         "IsSelected": "true"
                     },
                     {
-                        "ItemContent": "Greenville",
+                        "ItemContent": "../images/avril.jpg",
                         "Id": "2",
                         "IsAnswer": "false",
                         "IsSelected": "false"
                     },
                     {
-                        "ItemContent": "Hockey",
+                        "ItemContent": "../images/cover.jpg",
                         "Id": "3",
                         "IsAnswer": "false",
                         "IsSelected": "false"

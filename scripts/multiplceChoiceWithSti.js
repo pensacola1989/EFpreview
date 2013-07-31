@@ -56,23 +56,32 @@ Preview.multipleChoice = function (data) {
 			 , SELECT_CLASS = 'select'
 			 , UNSELECT_CLASS = 'unselect'
 			 , index = Preview.index
-			 , imgResTemplate = '<div class="img_item img_unselect"></div>'
-			 , RES_TEMPLATE = '<div class="res_item unselect {select}"><p>{content}</p><img style="display:{show}" src="../images/{src}"/></div>'
-			 , responses = data.Content.Questions[index].Responses;
+			 , IMGTEMPLATE = '<div class="img_item {select}"><img style="left:50px;top:50px;height:50px;width:50px;position:absolute;display:{show}" src="../images/{tagsrc}"><img src="{src}"/></div>'
+			 , RES_TEMPLATE = '<div class="res_item unselect {select}"><p>{content}</p><img class="txt_ans" style="display:{show}" src="../images/{src}"/></div>'
+			 , responses = data.Content.Questions[index].Responses
+			 , responseType = data.Content.Questions[index].ResponseItemType.toLowerCase();
 			 
 			$resRoot.hide();
 			var content = '';
+
 			$.each(responses,function (i,res) {
 				var cls = res.IsSelected == 'true' ? SELECT_CLASS : UNSELECT_CLASS;
 				var show = res.IsSelected == 'true' ? 'block' : 'none';
 				var src = res.IsSelected == 'true' && res.IsAnswer == 'true' 
 						? 'ok_btn.png'
 						: 'close_btn.png';
+				if(responseType == 'text') {
+					content += RES_TEMPLATE.replace('{select}',cls)
+											.replace('{content}',res.ItemContent)
+											.replace('{show}',show)
+											.replace('{src}',src);					
+				} else if(responseType == 'image') {
+					content += IMGTEMPLATE.replace('{select}',cls)
+											.replace('{tagsrc}',src)
+											.replace('{show}',show)
+											.replace('{src}',res.ItemContent);
+				}
 
-				content += RES_TEMPLATE.replace('{select}',cls)
-										.replace('{content}',res.ItemContent)
-										.replace('{show}',show)
-										.replace('{src}',src);
 			});
 			$resRoot.html(content).show();
 		}
