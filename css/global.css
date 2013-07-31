@@ -3,6 +3,8 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 padding: 0;
 margin: 0;
 }
+input,textarea{ outline:none; }
+textarea{ resize:none;}
 body{font-family:Arial;}
 .wrapper{border:1px solid #409fcf;margin:auto;width:1024px;height:768px;}
 .common_header{height:100px;background-color:#409fcf;color:#FFF;font-weight:noraml;}
@@ -21,3 +23,4 @@ body{font-family:Arial;}
 .progress_bar li:first-child{border-radius:10px 0 0 10px;}
 .progress_bar li:last-child{border-radius:0 10px 10px 0;}
 .progress_bar li.active_bar{background-color:#409fcf;}
+.disabled{opacity: 0.5;}

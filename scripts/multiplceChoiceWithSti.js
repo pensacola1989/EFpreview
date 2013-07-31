@@ -17,17 +17,37 @@ Preview.multipleChoice = function (data) {
 
 	return (function () {
 
+		/*
+		* if sti for all，do not render stimulus per time.
+		* else render per time
+		*/
 		function renderStimulus () {
-			var $stiRoot = $('.choice_sti');
-			var imgTemplate = '<div class="sti_img"><img src="{src}"/></div>';
-			var type = data.Content.StimulusItemType.toLowerCase();
+			var isForAll = false
+			, $stiRoot = $('.choice_sti')
+			, imgTemplate = '<div class="sti_img"><img src="{src}"/></div>'
+			, txtTemplate = '<div class="sti_text"><textarea readonly="true">{text}</textarea></div>'
+			, type = data.Content.StimulusItemType.toLowerCase()
+			, stimulusArr = []
+			, questions = data.Content.Questions
+			, isForAll = data.Content.Stimulus != '' ? true : false;
+			
+			for(var i = 0; i < questions.length; i++) {
+				var ret = isForAll 
+						? data.Content.Stimulus
+						: questions[i].Stimulus;
 
-			if(type == 'image') {
-				var content = imgTemplate.replace('{src}',data.Content.Stimulus);
-				$stiRoot.html(content);
-			} else if(type == 'text') {
-
+				stimulusArr.push(ret);
 			}
+
+			$.each(stimulusArr,function (index,sti) {
+				if(type == 'image') {
+					var content = imgTemplate.replace('{src}',sti);
+					$stiRoot.html(content);
+				} else if(type == 'text') {
+					var content = txtTemplate.replace('{text}','fdsfdsfsfsdfsdfsdfsdf');
+					$stiRoot.html(content);
+				}		
+			});
 		}
 
 		function renderReponse () {
@@ -36,16 +56,25 @@ Preview.multipleChoice = function (data) {
 			 , SELECT_CLASS = 'select'
 			 , UNSELECT_CLASS = 'unselect'
 			 , index = Preview.index
-			 , RES_TEMPLATE = '<div class="res_item unselect {select}">{content}</div>'
+			 , imgResTemplate = '<div class="img_item img_unselect"></div>'
+			 , RES_TEMPLATE = '<div class="res_item unselect {select}"><p>{content}</p><img style="display:{show}" src="../images/{src}"/></div>'
 			 , responses = data.Content.Questions[index].Responses;
 			 
 			$resRoot.hide();
 			var content = '';
 			$.each(responses,function (i,res) {
 				var cls = res.IsSelected == 'true' ? SELECT_CLASS : UNSELECT_CLASS;
-				content += RES_TEMPLATE.replace('{select}',cls).replace('{content}',res.ItemContent);
+				var show = res.IsSelected == 'true' ? 'block' : 'none';
+				var src = res.IsSelected == 'true' && res.IsAnswer == 'true' 
+						? 'ok_btn.png'
+						: 'close_btn.png';
+
+				content += RES_TEMPLATE.replace('{select}',cls)
+										.replace('{content}',res.ItemContent)
+										.replace('{show}',show)
+										.replace('{src}',src);
 			});
-			$resRoot.html(content).fadeIn();
+			$resRoot.html(content).show();
 		}
 
 		this.init = function () {

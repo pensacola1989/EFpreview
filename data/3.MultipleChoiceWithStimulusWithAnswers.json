@@ -15,7 +15,7 @@
         "TimeElapsed": "60000"
     },
     "Content": {
-        "StimulusItemType": "Image",
+        "StimulusItemType": "Text",
         "Stimulus": "../images/test.png",
         "Questions": [
             {

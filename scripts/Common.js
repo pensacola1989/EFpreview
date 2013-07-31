@@ -25,21 +25,31 @@ Preview.Common.makeProgress = function (len,cb) {
 		}
 	};
 
+	function setBtnStyle () {
+		$footer.find(C_FOOTER_BTN).removeClass('disabled');
+		if(Preview.index - 1 < 0) {
+			$footer.find(C_PREVIEW_BTN).addClass('disabled');
+		}
+		if(Preview.index + 1 >= len) {
+			$footer.find(C_NEXT_BTN).addClass('disabled');
+		}
+	}
+
 	function bindStepEvent () {
+
 		$footer.find(C_FOOTER_BTN).bind('click',function () {
 			var isLeft = $(this).hasClass(C_PREVIEW_BTN.replace('.',''));
 			
 			if((isLeft && Preview.index -1 >= 0) || (Preview.index + 1 < len && !isLeft)) {
 				if(isLeft) {
-					moveBar(--Preview.index);
-				}
-				if(!isLeft) {
+					moveBar(--Preview.index);		
+				} else {
 					moveBar(++Preview.index);
 				}
 			} else {
+				$(this).addClass('disabled');
 				return false;
 			}
-
 			if(cb && typeof cb == 'function'){
 				cb();
 			}
@@ -64,10 +74,12 @@ Preview.Common.makeProgress = function (len,cb) {
 			$(li).removeClass('active_bar');
 		});
 		$li.eq(index).addClass('active_bar');
+		setBtnStyle();
 	}
 
 	function init () {
 		renderProgressBar();
+		setBtnStyle();
 		bindStepEvent();
 	};
 
