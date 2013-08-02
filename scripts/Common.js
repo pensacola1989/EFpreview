@@ -2,6 +2,14 @@ var Preview = Preview || {};
 
 Preview.Common = Preview.Common || {};
 Preview.index = 0;
+
+Preview.Common.jpAudio = function (audioUrl) {
+	if(typeof audioUrl != 'object')	{
+		return;
+	}
+	
+};
+
 Preview.Common.makeProgress = function (len,cb) {
 	var $footer = $('.common_footer')
 		 ,	C_PROGRESS = '.bar_ul'

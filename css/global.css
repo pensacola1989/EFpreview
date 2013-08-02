@@ -23,4 +23,22 @@ body{font-family:Arial;}
 .progress_bar li:first-child{border-radius:10px 0 0 10px;}
 .progress_bar li:last-child{border-radius:0 10px 10px 0;}
 .progress_bar li.active_bar{background-color:#409fcf;}
+
 .disabled{opacity: 0.5;}
+
+/*20130801*/
+.sti_audio{width:100%;height:150px;margin-top:10px;border-top:2px solid #b4d6eb;border-bottom:2px solid #b4d6eb;padding-top:10px;}
+.player_area{width:100%px;height:70px;}
+.play_btn{height:42px;width:42px;float:left;cursor: pointer;}
+.play_btn img{height:42px;}
+.control_bar{float:left;height:42px;width:230px;}
+.retain .dur_time{float:left;height:42px;width:40px;line-height:42px;text-align:center;font-weight:bold;color:#4da8d7;font-size:12px;margin-left:20px;color:#FFF;text-shadow: 1px 1px 4px rgba(150, 150, 150, 1);}
+.retain .time{float:left;height:42px;width:20px;text-align:center;line-height:42px;font-weight:bold;color:#4da8d7;font-size:12px;color:#FFF;text-shadow: 1px 1px 4px rgba(150, 150, 150, 1);}
+.control_bar .progress{border:1px solid #b4d6eb;float:left;height:10px;width:190px;margin-top:12px;background-color:#b4d6eb;border-radius:10px;overflow:hidden;margin-left:20px;}
+.control_bar .play_bar{border:1px solid #4da8d7;float:left;height:10px;width:10px;border-radius:12px;background-color:#4da8d7;}
+.jp-seek-bar{width:190px;height:10px;}
+
+.retain{border:1px solid #aadac4;height:42px;background-color:#aadac4;border-radius:21px;}
+#slash{float:left;margin-top:10px;margin-right:10px;color:#FFF;}
+.volum{width:40px;height:40px;float:right;margin-right:10px;}
+.volum img{height:20px;margin-top:10px;cursor:pointer;}
