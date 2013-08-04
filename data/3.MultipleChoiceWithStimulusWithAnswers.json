@@ -15,8 +15,8 @@
         "TimeElapsed": "60000"
     },
     "Content": {
-        "StimulusItemType": "Text",
-        "Stimulus": "../images/test.png",
+        "StimulusItemType": "Audio",
+        "Stimulus": "../data/test.mp3",
         "Questions": [
             {
                 "Title": "What is Michael’s family name?",

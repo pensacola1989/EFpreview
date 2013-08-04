@@ -4,16 +4,16 @@ Preview.multipleChoice =  Preview.multipleChoice || {};
 $(document).ready(function(){
 
 	//--------------------testing-----------------------
-    $("#jquery_jplayer_1").jPlayer({
-        ready: function(event) {
-            $(this).jPlayer("setMedia", {
-                mp3: "http://jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
-                oga: "http://jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
-            });
-        },
-        swfPath: "http://jplayer.org/latest/js",
-        supplied: "mp3, oga"
-    });
+    // $("#jquery_jplayer_1").jPlayer({
+    //     ready: function(event) {
+    //         $(this).jPlayer("setMedia", {
+    //             mp3: "http://jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
+    //             oga: "http://jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
+    //         });
+    //     },
+    //     swfPath: "http://jplayer.org/latest/js",
+    //     supplied: "mp3, oga"
+    // });
 
 	//--------------------------------------------------
 
@@ -54,15 +54,26 @@ Preview.multipleChoice = function (data) {
 				stimulusArr.push(ret);
 			}
 
-			$.each(stimulusArr,function (index,sti) {
-				if(type == 'image') {
-					var content = imgTemplate.replace('{src}',sti);
-					$stiRoot.html(content);
-				} else if(type == 'text') {
-					var content = txtTemplate.replace('{text}','fdsfdsfsfsdfsdfsdfsdf');
-					$stiRoot.html(content);
-				}		
-			});
+			if(type == 'image') {
+				var content = imgTemplate.replace('{src}',stimulusArr[Preview.index]);
+				$stiRoot.html(content);	
+			} else if(type == 'text') {
+				var content = txtTemplate.replace('{text}','fdsfdsfsfsdfsdfsdfsdf');
+				$stiRoot.html(content);
+			} else if(type == 'audio') {
+				Preview.Common.jpAudio(stimulusArr[Preview.index]);
+			}
+			// $.each(stimulusArr,function (index,sti) {
+			// 	if(type == 'image') {
+			// 		var content = imgTemplate.replace('{src}',sti);
+			// 		$stiRoot.html(content);
+			// 	} else if(type == 'text') {
+			// 		var content = txtTemplate.replace('{text}','fdsfdsfsfsdfsdfsdfsdf');
+			// 		$stiRoot.html(content);
+			// 	} else if(type == 'audio') {
+			// 		Preview.Common.jpAudio('ss');
+			// 	}
+			// });
 		}
 
 		function renderReponse () {
@@ -103,7 +114,7 @@ Preview.multipleChoice = function (data) {
 
 		this.init = function () {
 			common.render(data,renderReponse);
-		//	renderStimulus();
+			renderStimulus();
 			renderReponse();
 		};
 

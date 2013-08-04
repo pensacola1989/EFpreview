@@ -2,11 +2,43 @@ var Preview = Preview || {};
 
 Preview.Common = Preview.Common || {};
 Preview.index = 0;
-
+Preview.template = {};
 Preview.Common.jpAudio = function (audioUrl) {
-	if(typeof audioUrl != 'object')	{
-		return;
+	var $container
+	 ,	$template
+	 ,	$jPlayer;
+
+	function setUI() {
+		$jPlayer = $('#jquery_jplayer_1');
+		$container = $('.choice_sti');
+		$template = $('.template').find('#jp_container_1').clone();
+		$('.template').empty();
+		$container.html($template);		
 	}
+
+	function bindEvent () {
+		$jPlayer.jPlayer({
+				 ready: function(event) {
+		            $(this).jPlayer("setMedia", {
+		            	mp3: audioUrl
+		                // mp3: "http://jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3"
+		            });
+		        },
+		        swfPath: "http://jplayer.org/latest/js",
+		        supplied: "mp3, oga"
+			});
+	}
+
+	function init() {
+		if(!audioUrl){
+			console.log('parameter needed!');
+			return;
+		}
+		setUI();
+		bindEvent();
+	}
+
+	init();
 	
 };
 
