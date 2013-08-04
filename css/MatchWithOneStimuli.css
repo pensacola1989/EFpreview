@@ -1,0 +1,13 @@
+.dropzone img{display:none;}
+.choice_res{border:1px solid;}
+.answer_area{border:1px solid green;height:300px;}
+.stimulus_inside{height:150px;}
+.stimulus_item.img_item{height:80px;width:100px;float:left;margin-right:10px;background:url('../images/dragSti_bg.png') no-repeat;text-align:center;}
+.stimulus_item img{max-height:60px;margin-top:4px;}
+
+.dropzone{border:1px solid;height:150px;}
+.dropzone_item.txt_item{float:left;height:120px;margin-right:10px;width:100px;background:url('../images/dragTxt_bg.png') no-repeat;}
+.dropzone_item .dropzone_textarea{width:100px;height:80px;margin-top:20px;width:80px;margin-left:5px;word-break:break-all;font-size:12px;padding:5px;color:#409fcf;}
+
+.stimulus_item.txt_item{float:left;width:100px;height:140px;margin-right:10px;background:url('../images/drp_txt.png') no-repeat;}
+.sti_textarea{height:110px;margin-top:5px;width:80px;margin-left:5px;font-size:12px;color:#409fcf;padding:5px;}

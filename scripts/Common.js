@@ -3,6 +3,18 @@ var Preview = Preview || {};
 Preview.Common = Preview.Common || {};
 Preview.index = 0;
 Preview.template = {};
+Preview.Common.loadData = function (url,cb) {
+	$.ajax({
+		url: url,
+		type: 'GET'
+	}).success(function (data) {
+		if(cb && typeof cb == 'function')		
+			cb(data);
+	}).error(function (err) {
+		console.log(err);
+	});	
+};
+
 Preview.Common.jpAudio = function (audioUrl) {
 	var $container
 	 ,	$template
@@ -142,9 +154,13 @@ Preview.Common.render = function (data,callback) {
 	
 
 	var init = function () {
-		var len = data.Content.Questions.length;
+		var qs = data.Content.Questions || data.Content.Question;
+		var len = qs.len;
 		renderHeader();	
-		Preview.Common.makeProgress(len,callback);
+		if(len >= 2 && (callback && typeof callback == 'function')){
+			Preview.Common.makeProgress(len,callback);			
+		}
+
 	//	renderProgressBar();
 	};
 

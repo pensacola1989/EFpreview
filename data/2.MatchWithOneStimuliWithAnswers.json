@@ -1,9 +1,3 @@
-/*
- * 1. Content.Questoins.StimulusItemType can be Text, Audio
- * 2. The Content.Questions.DropzoneStimulusItemType can be Image or Text
- * 3. The Content.Questions.ResponseItemType can be Image or Text
- * 4. Common.TimeElapsed is by millisecond
- */
 {
     "Common": {
         "MetaTag": "B1F019",
@@ -26,34 +20,34 @@
                 "Title": "Listen and match the pictures.",
                 "StimulusItemType": "Audio",
                 "Stimulus": "/ActivityResources/12714/BK1_Ch1-2_L1_Q1.mp3",
-                "DropzoneStimulusItemType": "Image",
+                "DropzoneStimulusItemType": "Text",
                 "DropzoneStimuli": [
                     {
-                        "ItemContent": "/ActivityResources/12714/Q1.png",
+                        "ItemContent": "../images/img.jpg",
                         "Id": "1",
                         "ResponseId": "1",
                         "AnswerId": "1"
                     },
                     {
-                        "ItemContent": "/ActivityResources/12714/Q2.png",
+                        "ItemContent": "../images/img.jpg",
                         "Id": "2",
                         "ResponseId": "2",
                         "AnswerId": "2"
                     },
                     {
-                        "ItemContent": "/ActivityResources/12714/Q3.png",
+                        "ItemContent": "../images/img.jpg",
                         "Id": "3",
                         "ResponseId": "3",
                         "AnswerId": "4"
                     },
                     {
-                        "ItemContent": "/ActivityResources/12715/Q4.png",
+                        "ItemContent": "../images/img.jpg",
                         "Id": "4",
                         "ResponseId": "4",
                         "AnswerId": "5"
                     },
                     {
-                        "ItemContent": "/ActivityResources/12715/Q5.png",
+                        "ItemContent": "../images/img.jpg",
                         "Id": "5",
                         "ResponseId": "5",
                         "AnswerId": "-1"

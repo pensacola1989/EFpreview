@@ -63,17 +63,6 @@ Preview.multipleChoice = function (data) {
 			} else if(type == 'audio') {
 				Preview.Common.jpAudio(stimulusArr[Preview.index]);
 			}
-			// $.each(stimulusArr,function (index,sti) {
-			// 	if(type == 'image') {
-			// 		var content = imgTemplate.replace('{src}',sti);
-			// 		$stiRoot.html(content);
-			// 	} else if(type == 'text') {
-			// 		var content = txtTemplate.replace('{text}','fdsfdsfsfsdfsdfsdfsdf');
-			// 		$stiRoot.html(content);
-			// 	} else if(type == 'audio') {
-			// 		Preview.Common.jpAudio('ss');
-			// 	}
-			// });
 		}
 
 		function renderReponse () {

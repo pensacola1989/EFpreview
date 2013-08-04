@@ -44,3 +44,7 @@ body{font-family:Arial;}
 .volum img{height:20px;margin-top:5px;cursor:pointer;}
 .jp-mute{border: 1px solid #55b68a;text-align: center;background-color: #55b68a;width: 50px;}
 .jp-unmute{border: 1px solid orange;text-align: center;background-color: orange;width: 50px;}
+
+.choice_sti{float:left;width:280px;height:560px;margin-left:50px;margin-top:30px;}
+.choice_res{float:right;height:560px;width:600px;margin-right:50px;margin-top:30px;}
+.choice_sti img{max-width:280px;}
