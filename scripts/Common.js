@@ -166,3 +166,69 @@ Preview.Common.render = function (data,callback) {
 
 	init();
 }
+
+Preview.Common.renderLeftSti = function (data) {
+	var isForAll = false
+	 ,  $stiRoot = $('.choice_sti')
+	 ,	imgTemplate = '<div class="sti_img"><img src="{src}"/></div>'
+	 ,	txtTemplate = '<div class="sti_text"><textarea readonly="true">{text}</textarea></div>'
+	 ,	type = (data.Content.StimulusItemType || data.Content.Question[0].StimulusItemType).toLowerCase()
+	 ,	stimulusArr = []
+	 ,	questions = data.Content.Questions || data.Content.Question
+	 ,	isForAll = data.Content.Stimulus != '' ? true : false;
+
+	if(data.Content.Questions) {
+		for(var i = 0; i < questions.length; i++) {
+			var ret = isForAll 
+					? data.Content.Stimulus
+					: questions[i].Stimulus;
+
+			stimulusArr.push(ret);
+		}		
+	} else {
+		stimulusArr.push(questions[0].Stimulus);
+	}
+
+
+	if(type == 'image') {
+		var content = imgTemplate.replace('{src}',stimulusArr[Preview.index]);
+		$stiRoot.html(content);	
+	} else if(type == 'text') {
+		var content = txtTemplate.replace('{text}','fdsfdsfsfsdfsdfsdfsdf');
+		$stiRoot.html(content);
+	} else if(type == 'audio') {
+		Preview.Common.jpAudio(stimulusArr[Preview.index]);
+	}
+}
+
+Preview.Common.renderDrpAudio = function (drpSti) {
+	if(typeof drpSti != 'object' && !drpSti.length) {
+		return;
+	}
+	var $root = $('.answer_area').find('.stimulus_inside');
+	var jPlayer = '<div id="jquery_jplayer_2" class="jp-jplayer"></div>';
+	var audioTPL = '<div class="stimulus_item audio_item"><img class="m_play_btn" url="{url}" src="../images/stiPlay_btn.png"/></div>';
+	var content = '';
+	
+	function setUI() {
+		$('body').prepend(jPlayer);
+		$.each(drpSti,function (index,sti) {
+			content += audioTPL.replace('{url}',sti.ItemContent);
+		})
+		$root.html(content);
+	}
+
+	function bindEvent () {
+		$('.m_play_btn').bind('click',function () {
+			alert('fuck');
+		});
+	}
+
+	function init () {
+		setUI();
+		bindEvent();
+	}
+
+	init();
+
+};

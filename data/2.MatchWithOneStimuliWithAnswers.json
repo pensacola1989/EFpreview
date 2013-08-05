@@ -19,29 +19,29 @@
             {
                 "Title": "Listen and match the pictures.",
                 "StimulusItemType": "Audio",
-                "Stimulus": "/ActivityResources/12714/BK1_Ch1-2_L1_Q1.mp3",
+                "Stimulus": "../data/test0.mp3",
                 "DropzoneStimulusItemType": "Text",
                 "DropzoneStimuli": [
                     {
-                        "ItemContent": "../images/img.jpg",
+                        "ItemContent": "../data/test.mp3",
                         "Id": "1",
                         "ResponseId": "1",
                         "AnswerId": "1"
                     },
                     {
-                        "ItemContent": "../images/img.jpg",
+                        "ItemContent": "../data/test2.mp3",
                         "Id": "2",
                         "ResponseId": "2",
                         "AnswerId": "2"
                     },
                     {
-                        "ItemContent": "../images/img.jpg",
+                        "ItemContent": "../data/test3.mp3",
                         "Id": "3",
                         "ResponseId": "3",
                         "AnswerId": "4"
                     },
                     {
-                        "ItemContent": "../images/img.jpg",
+                        "ItemContent": "../data/test4.mp3",
                         "Id": "4",
                         "ResponseId": "4",
                         "AnswerId": "5"
@@ -53,18 +53,18 @@
                         "AnswerId": "-1"
                     }
                 ],
-                "ResponseItemType": "Text",
+                "ResponseItemType": "Image",
                 "Responses": [
                     {
-                        "ItemContent": "There are two pens and a pencil.",
+                        "ItemContent": "../data/test2.mp3",
                         "Id": "1"
                     },
                     {
-                        "ItemContent": "There are two pencils and an eraser.",
+                        "ItemContent": "../data/test3.mp3",
                         "Id": "2"
                     },
                     {
-                        "ItemContent": "There are three pencils and two pens.",
+                        "ItemContent": "../data/test4.mp3",
                         "Id": "3"
                     },
                     {
@@ -72,7 +72,7 @@
                         "Id": "4"
                     },
                     {
-                        "ItemContent": "There are two erasers and a pen.",
+                        "ItemContent": "../images/img.jpg",
                         "Id": "5"
                     }
                 ]

@@ -103,7 +103,8 @@ Preview.multipleChoice = function (data) {
 
 		this.init = function () {
 			common.render(data,renderReponse);
-			renderStimulus();
+			common.renderLeftSti(data);
+		//	renderStimulus();
 			renderReponse();
 		};
 
