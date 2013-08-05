@@ -172,12 +172,12 @@ Preview.Common.renderLeftSti = function (data) {
 	 ,  $stiRoot = $('.choice_sti')
 	 ,	imgTemplate = '<div class="sti_img"><img src="{src}"/></div>'
 	 ,	txtTemplate = '<div class="sti_text"><textarea readonly="true">{text}</textarea></div>'
-	 ,	type = (data.Content.StimulusItemType || data.Content.Question[0].StimulusItemType).toLowerCase()
+	 ,	type = (data.Content.StimulusItemType || data.Content.Questions[0].StimulusItemType).toLowerCase()
 	 ,	stimulusArr = []
 	 ,	questions = data.Content.Questions || data.Content.Question
 	 ,	isForAll = data.Content.Stimulus != '' ? true : false;
 
-	if(data.Content.Questions) {
+	if(data.Content.Questions.length > 1) {
 		for(var i = 0; i < questions.length; i++) {
 			var ret = isForAll 
 					? data.Content.Stimulus

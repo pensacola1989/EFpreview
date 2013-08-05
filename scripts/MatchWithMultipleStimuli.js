@@ -1,10 +1,10 @@
-Preview.matchWithOneStimuli = Preview.matchWithOneStimuli || {};
+Preview.MatchWithMultipleStimuli = Preview.MatchWithMultipleStimuli || {};
 
 $(document).ready(function () {
-	Preview.Common.loadData('../data/2.MatchWithOneStimuliWithAnswers.json',Preview.matchWithOneStimuli);
+	Preview.Common.loadData('../data/1.MatchWithMultipleStimuliWithAnswers.json',Preview.MatchWithMultipleStimuli);
 });
 
-Preview.matchWithOneStimuli = function (data) {
+Preview.MatchWithMultipleStimuli = function (data) {
 
 	var _common = Preview.Common
 	 ,	$root = $('.answer_area')
@@ -23,8 +23,8 @@ Preview.matchWithOneStimuli = function (data) {
 
 		function renderStiInside () {
 			var question = data.Content.Questions[0];
-			var drpSti = question.DropzoneStimuli;
-			var type = question.DropzoneStimulusItemType.toLowerCase();
+			var drpSti = question.DropzoneStimuli || question.Stimuli;
+			var type = (question.DropzoneStimulusItemType || question.StimulusItemType).toLowerCase();
 
 			var getTPL = function (type) {
 				var ret = {};
@@ -74,7 +74,7 @@ Preview.matchWithOneStimuli = function (data) {
 
 		function renderDropzone () {
 			var question = data.Content.Questions[0];
-			var drpStimulus = question.DropzoneStimuli;
+			var drpStimulus = question.DropzoneStimuli || question.Stimuli;
 			var responses = question.Responses;
 			var type = question.ResponseItemType.toLowerCase();
 
@@ -97,7 +97,7 @@ Preview.matchWithOneStimuli = function (data) {
 
 		function init () {
 			_common.render(data,null);
-			_common.renderLeftSti(data);
+		//	_common.renderLeftSti(data);
 			renderStiInside();
 			renderDropzone();
 			bindEvent();
