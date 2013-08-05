@@ -19,9 +19,9 @@
 
 .dropzone_item.audio_item{height:80px;float:left;width:100px;margin-right:10px;text-align:center;background:url('../images/audio_rsp.png') no-repeat;}
 
-.txt_item .answer{position:absolute;height:90px;margin-top:20px;width:90px;margin-left:5px;background-color:#FFF;opacity:0.4;text-align:center;}
+.txt_item .answer{position:absolute;height:90px;margin-top:20px;width:90px;margin-left:5px;background-color:rgba(255,255,255,0.6);text-align:center;}
 .answer img{max-width:40px;margin-left:10px;}
-.img_answer {position:absolute;height:60px;margin-top:20px;width:90px;margin-left:5px;background-color:#FFF;opacity:0.4;text-align:center;}
+.img_answer {position:absolute;height:60px;margin-top:20px;width:90px;margin-left:5px;background-color:rgba(255,255,255,0.6);text-align:center;}
 .img_answer img{max-width:40px;margin-left:12px;margin-top:10px;}
 .dropzone_item .m_play_btn{margin-left:20px;}
 .audio_answer{height:70px;text-align:center;}
