@@ -15,7 +15,7 @@
         "TimeElapsed": "60000"
     },
     "Content": {
-        "StimulusItemType": "Audio",
+        "StimulusItemType": "Text",
         "Stimulus": "../data/test.mp3",
         "Questions": [
             {

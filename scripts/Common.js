@@ -155,7 +155,7 @@ Preview.Common.render = function (data,callback) {
 
 	var init = function () {
 		var qs = data.Content.Questions || data.Content.Question;
-		var len = qs.len;
+		var len = qs.length;
 		renderHeader();	
 		if(len >= 2 && (callback && typeof callback == 'function')){
 			Preview.Common.makeProgress(len,callback);			
@@ -167,15 +167,27 @@ Preview.Common.render = function (data,callback) {
 	init();
 }
 
+
+
 Preview.Common.renderLeftSti = function (data) {
 	var isForAll = false
 	 ,  $stiRoot = $('.choice_sti')
 	 ,	imgTemplate = '<div class="sti_img"><img src="{src}"/></div>'
-	 ,	txtTemplate = '<div class="sti_text"><textarea readonly="true">{text}</textarea></div>'
+	 ,	txtTemplate = '<div class="sti_text"><textarea readonly="true">{src}</textarea></div>'
 	 ,	type = (data.Content.StimulusItemType || data.Content.Questions[0].StimulusItemType).toLowerCase()
 	 ,	stimulusArr = []
 	 ,	questions = data.Content.Questions || data.Content.Question
 	 ,	isForAll = data.Content.Stimulus != '' ? true : false;
+	
+
+	var getLeftTempalte = function (type) {
+		var ret = {};
+		ret['image'] = imgTemplate;
+		ret['text'] = txtTemplate;
+		ret['audio'] = Preview.Common.jpAudio;
+
+		return ret[type] || '';
+	};
 
 	if(data.Content.Questions.length > 1) {
 		for(var i = 0; i < questions.length; i++) {
@@ -189,16 +201,22 @@ Preview.Common.renderLeftSti = function (data) {
 		stimulusArr.push(questions[0].Stimulus);
 	}
 
-
-	if(type == 'image') {
-		var content = imgTemplate.replace('{src}',stimulusArr[Preview.index]);
-		$stiRoot.html(content);	
-	} else if(type == 'text') {
-		var content = txtTemplate.replace('{text}','fdsfdsfsfsdfsdfsdfsdf');
-		$stiRoot.html(content);
-	} else if(type == 'audio') {
-		Preview.Common.jpAudio(stimulusArr[Preview.index]);
+	var template = getLeftTempalte(type);
+	if(template && typeof template !== 'function') {
+		var content = template.replace('{src}',stimulusArr[Preview.index]);
+	} else {
+		template(stimulusArr[Preview.index]);
 	}
+	$stiRoot.html(content);
+	// if(type == 'image') {
+	// 	var content = imgTemplate.replace('{src}',stimulusArr[Preview.index]);
+	// 	$stiRoot.html(content);	
+	// } else if(type == 'text') {
+	// 	var content = txtTemplate.replace('{text}','fdsfdsfsfsdfsdfsdfsdf');
+	// 	$stiRoot.html(content);
+	// } else if(type == 'audio') {
+	// 	Preview.Common.jpAudio(stimulusArr[Preview.index]);
+	// }
 }
 
 Preview.Common.renderDrpAudio = function (drpSti) {

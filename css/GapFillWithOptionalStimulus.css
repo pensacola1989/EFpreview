@@ -7,9 +7,13 @@
 .img_item.select{height:160px;width:160px;margin-top:15px;border-color:#30789c;background-color:#5993b0;opacity: 0.6;}
 .img_item img{height:100%;width:100%;}
 
-.article{border:1px solid;min-height:250px;font-size:14px;color:#409fcf;}
+.article{border:1px solid transparent;min-height:250px;font-size:14px;color:#409fcf;}
 .gap{border:1px solid green;float:left;height:55px;margin:10px;line-height:55px;width:100px;overflow:hidden;text-align:center;}
 .para{border:1px solid red;overflow:hidden;float:left;height:55px;margin:10px;line-height:55px;}
 
 .article{line-height:50px;}
-.article input{height:50px;margin:10px;background:url('../images/Gap_rsp.png') no-repeat;width:120px;border:none;padding:5px;}
+.article input{text-align:center;font-family:Arial;font-size:14px;color:#FFF;height:40px;margin:10px;background:url('../images/dragger.png') no-repeat center 10px #409fcf;min-width:100px;border:none;padding:5px;border-radius:5px;-webkit-box-shadow: 2px 1px 2px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    2px 1px 2px rgba(50, 50, 50, 0.75);
+box-shadow:         2px 1px 2px rgba(50, 50, 50, 0.75);}
+
+.float_anwer img{width:30px;}
