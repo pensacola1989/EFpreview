@@ -1,9 +1,3 @@
-/*
- * 1. The Content.Stimulus is null or the audio url
- * 2. The correct Response  Sequence will be ordered by Response[x].Id
- * 3. Response[x].ResponseOrder is the answer student submitted
- * 4. Common.TimeElapsed is by millisecond
- */
 {
     "Common": {
         "MetaTag": "B1F019",
@@ -30,13 +24,13 @@
                         "ItemContent": "some text 1",
                         "Order":"1",
                         "IsDistractor":"false",
-                        "ResponseOrder":"3"
+                        "ResponseOrder":"1"
                     },
                     {
                         "ItemContent": "some text 2",
                         "Order":"2",
                         "IsDistractor":"false",
-                        "ResponseOrder":"1"
+                        "ResponseOrder":"3"
                     },
                     {
                         "ItemContent": "some text 3",
@@ -47,8 +41,8 @@
                     {
                         "ItemContent": "some text 4",
                         "Order":"4",
-                        "IsDistractor":"true",
-                        "ResponseOrder":"-1"
+                        "IsDistractor":"false",
+                        "ResponseOrder":"4"
                     },
                     {
                         "ItemContent": "some text 5",

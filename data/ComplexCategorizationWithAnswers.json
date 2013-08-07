@@ -1,0 +1,278 @@
+{
+    "Common": {
+        "MetaTag": "B1F019",
+        "ActivityType": "ComplexCategorization",
+        "Title": "Activity Title",
+        "Instruction": "Activity Instruction",
+        "ActivityId": "12716",
+        "TemplateId": "106",
+        "StudentId":"12321",
+        "Score":"40",
+        "PointsAchieved":"2",
+        "ActivityPoints":"5",
+        "StartTime": "Tue, 26 Mar 2013 09:30:05 -0800",
+        "EndTime": "Tue, 26 Mar 2013 09:30:05 -0800",
+        "TimeElapsed": "60000"
+    },
+    "Content": {
+        "StimulusItemType":"Text",
+        "Stimulus":"Text here",
+        "Questions": [
+            {
+                "Title": "What is Michael’s family name?",
+                "Responses": [
+                    [
+                        {
+                            "ItemType": "ColumnTitle",
+                            "ItemContent": "Category Heading",
+                            "Id":"1"
+                        },
+                        {
+                            "ItemType": "ColumnTitle",
+                            "ItemContent": "Category Heading",
+                            "Id":"2"
+                        },
+                        {
+                            "ItemType": "ColumnTitle",
+                            "ItemContent": "Category Heading",
+                            "Id":"3"
+                        },
+                        {
+                            "ItemType": "ColumnTitle",
+                            "ItemContent": "Category Heading",
+                            "Id":"3"
+                        },
+                        {
+                            "ItemType": "ColumnTitle",
+                            "ItemContent": "Category Heading",
+                            "Id":"3"
+                        }
+                    ],
+                    [
+                        {
+                            "ItemType": "RowLabel",
+                            "ItemContent": "Row Label 1",
+                            "Id":"4"
+                        },
+                        {
+                            "ItemType": "Cell",
+                            "ItemContent": "sdfsdfsd",
+                            "Id":"5"
+                        },
+                        {
+                            "ItemType": "Cell",
+                            "ItemContent": "sdfsdf",
+                            "Id":"6"
+                        },
+                        {
+                            "ItemType": "cell",
+                            "ItemContent": "Category Heading",
+                            "Id":"3"
+                        },
+                        {
+                            "ItemType": "cell",
+                            "ItemContent": "Category Heading",
+                            "Id":"3"
+                        }
+                    ],
+                    [
+                        {
+                            "ItemType": "RowLabel",
+                            "ItemContent": "Row Label 2",
+                            "Id":"7"
+                        },
+                        {
+                            "ItemType": "Cell",
+                            "ItemContent": "sdfsdf",
+                            "Id":"8"
+                        },
+                        {
+                            "ItemType": "Cell",
+                            "ItemContent": "fixed content here",
+                            "Id":"9"
+                        },
+                        {
+                            "ItemType": "cell",
+                            "ItemContent": "Category Heading",
+                            "Id":"3"
+                        },
+                        {
+                            "ItemType": "cell",
+                            "ItemContent": "Category Heading",
+                            "Id":"3"
+                        }
+                    ],
+                    [
+                        {
+                            "ItemType": "RowLabel",
+                            "ItemContent": "Row Label 2",
+                            "Id":"7"
+                        },
+                        {
+                            "ItemType": "Cell",
+                            "ItemContent": "sdfsdfsd",
+                            "Id":"8"
+                        },
+                        {
+                            "ItemType": "Cell",
+                            "ItemContent": "fixed content here",
+                            "Id":"9"
+                        },
+                        {
+                            "ItemType": "cell",
+                            "ItemContent": "Category Heading",
+                            "Id":"3"
+                        },
+                        {
+                            "ItemType": "cell",
+                            "ItemContent": "Category Heading",
+                            "Id":"3"
+                        }
+                    ],
+                    [
+                        {
+                            "ItemType": "RowLabel",
+                            "ItemContent": "Row Label 2",
+                            "Id":"7"
+                        },
+                        {
+                            "ItemType": "Cell",
+                            "ItemContent": "sdfsdfsdfsdfdsfsdf",
+                            "Id":"8"
+                        },
+                        {
+                            "ItemType": "Cell",
+                            "ItemContent": "fixed content here",
+                            "Id":"9"
+                        },
+                        {
+                            "ItemType": "cell",
+                            "ItemContent": "Category Heading",
+                            "Id":"3"
+                        },
+                        {
+                            "ItemType": "cell",
+                            "ItemContent": "Category Heading",
+                            "Id":"3"
+                        }
+                    ]
+
+                ],
+                "ResponseFill":[
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"1",
+                        "ParentId":"5",
+                        "IsFixed":"false",
+                        "ResponseParentId":"5"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"2",
+                        "ParentId":"6",
+                        "IsFixed":"true",
+                        "ResponseParentId":"6"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"3",
+                        "ParentId":"8",
+                        "IsFixed":"false",
+                        "ResponseParentId":"8"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"4",
+                        "ParentId":"-1",
+                        "IsFixed":"false",
+                        "ResponseParentId":"-1"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"5",
+                        "ParentId":"-1",
+                        "IsFixed":"true",
+                        "ResponseParentId":"-1"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"6",
+                        "ParentId":"-1",
+                        "IsFixed":"false",
+                        "ResponseParentId":"-1"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"6",
+                        "ParentId":"-1",
+                        "IsFixed":"false",
+                        "ResponseParentId":"-1"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"6",
+                        "ParentId":"-1",
+                        "IsFixed":"true",
+                        "ResponseParentId":"-1"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"6",
+                        "ParentId":"-1",
+                        "IsFixed":"false",
+                        "ResponseParentId":"-1"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"6",
+                        "ParentId":"-1",
+                        "IsFixed":"false",
+                        "ResponseParentId":"-1"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"6",
+                        "ParentId":"-1",
+                        "IsFixed":"false",
+                        "ResponseParentId":"-1"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"6",
+                        "ParentId":"-1",
+                        "IsFixed":"false",
+                        "ResponseParentId":"-1"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"6",
+                        "ParentId":"-1",
+                        "IsFixed":"false",
+                        "ResponseParentId":"-1"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"6",
+                        "ParentId":"-1",
+                        "IsFixed":"false",
+                        "ResponseParentId":"-1"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"6",
+                        "ParentId":"15",
+                        "IsFixed":"false",
+                        "ResponseParentId":"15"
+                    },
+                    {
+                        "ItemContent": "Text Content",
+                        "Id":"6",
+                        "ParentId":"-1",
+                        "IsFixed":"false",
+                        "ResponseParentId":"-1"
+                    }
+                ]
+            }
+        ]
+    }
+}

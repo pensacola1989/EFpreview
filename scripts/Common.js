@@ -6,7 +6,8 @@ Preview.template = {};
 Preview.Common.loadData = function (url,cb) {
 	$.ajax({
 		url: url,
-		type: 'GET'
+		type: 'GET',
+		dataType: 'json'
 	}).success(function (data) {
 		if(cb && typeof cb == 'function')		
 			cb(data);
@@ -198,7 +199,7 @@ Preview.Common.renderLeftSti = function (data) {
 			stimulusArr.push(ret);
 		}		
 	} else {
-		stimulusArr.push(questions[0].Stimulus);
+		stimulusArr.push(questions[0].Stimulus || data.Content.Stimulus);
 	}
 
 	var template = getLeftTempalte(type);
