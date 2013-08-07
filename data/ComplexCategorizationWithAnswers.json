@@ -40,45 +40,23 @@
                         {
                             "ItemType": "ColumnTitle",
                             "ItemContent": "Category Heading",
-                            "Id":"3"
+                            "Id":"4"
                         },
                         {
                             "ItemType": "ColumnTitle",
                             "ItemContent": "Category Heading",
-                            "Id":"3"
+                            "Id":"5"
                         }
                     ],
                     [
                         {
                             "ItemType": "RowLabel",
                             "ItemContent": "Row Label 1",
-                            "Id":"4"
-                        },
-                        {
-                            "ItemType": "Cell",
-                            "ItemContent": "sdfsdfsd",
-                            "Id":"5"
-                        },
-                        {
-                            "ItemType": "Cell",
-                            "ItemContent": "sdfsdf",
                             "Id":"6"
                         },
                         {
-                            "ItemType": "cell",
-                            "ItemContent": "Category Heading",
-                            "Id":"3"
-                        },
-                        {
-                            "ItemType": "cell",
-                            "ItemContent": "Category Heading",
-                            "Id":"3"
-                        }
-                    ],
-                    [
-                        {
-                            "ItemType": "RowLabel",
-                            "ItemContent": "Row Label 2",
+                            "ItemType": "Cell",
+                            "ItemContent": "sdfsdfsd",
                             "Id":"7"
                         },
                         {
@@ -87,73 +65,95 @@
                             "Id":"8"
                         },
                         {
-                            "ItemType": "Cell",
-                            "ItemContent": "fixed content here",
+                            "ItemType": "cell",
+                            "ItemContent": "Category Heading",
                             "Id":"9"
                         },
                         {
                             "ItemType": "cell",
                             "ItemContent": "Category Heading",
-                            "Id":"3"
-                        },
-                        {
-                            "ItemType": "cell",
-                            "ItemContent": "Category Heading",
-                            "Id":"3"
+                            "Id":"10"
                         }
                     ],
                     [
                         {
                             "ItemType": "RowLabel",
                             "ItemContent": "Row Label 2",
-                            "Id":"7"
+                            "Id":"11"
+                        },
+                        {
+                            "ItemType": "Cell",
+                            "ItemContent": "sdfsdf",
+                            "Id":"12"
+                        },
+                        {
+                            "ItemType": "Cell",
+                            "ItemContent": "fixed content here",
+                            "Id":"13"
+                        },
+                        {
+                            "ItemType": "cell",
+                            "ItemContent": "Category Heading",
+                            "Id":"14"
+                        },
+                        {
+                            "ItemType": "cell",
+                            "ItemContent": "Category Heading",
+                            "Id":"15"
+                        }
+                    ],
+                    [
+                        {
+                            "ItemType": "RowLabel",
+                            "ItemContent": "Row Label 2",
+                            "Id":"16"
                         },
                         {
                             "ItemType": "Cell",
                             "ItemContent": "sdfsdfsd",
-                            "Id":"8"
+                            "Id":"17"
                         },
                         {
                             "ItemType": "Cell",
                             "ItemContent": "fixed content here",
-                            "Id":"9"
+                            "Id":"18"
                         },
                         {
                             "ItemType": "cell",
                             "ItemContent": "Category Heading",
-                            "Id":"3"
+                            "Id":"19"
                         },
                         {
                             "ItemType": "cell",
                             "ItemContent": "Category Heading",
-                            "Id":"3"
+                            "Id":"20"
                         }
                     ],
                     [
                         {
                             "ItemType": "RowLabel",
                             "ItemContent": "Row Label 2",
-                            "Id":"7"
+                            "Id":"21"
                         },
                         {
                             "ItemType": "Cell",
                             "ItemContent": "sdfsdfsdfsdfdsfsdf",
-                            "Id":"8"
+                            "Id":"22"
                         },
                         {
                             "ItemType": "Cell",
                             "ItemContent": "fixed content here",
-                            "Id":"9"
+                            "Id":"23"
                         },
                         {
                             "ItemType": "cell",
                             "ItemContent": "Category Heading",
-                            "Id":"3"
+                            "Id":"24"
                         },
                         {
                             "ItemType": "cell",
                             "ItemContent": "Category Heading",
-                            "Id":"3"
+                            "Id":"25"
                         }
                     ]
 
@@ -183,79 +183,79 @@
                     {
                         "ItemContent": "Text Content",
                         "Id":"4",
-                        "ParentId":"-1",
+                        "ParentId":"7",
                         "IsFixed":"false",
-                        "ResponseParentId":"-1"
+                        "ResponseParentId":"7"
                     },
                     {
                         "ItemContent": "Text Content",
                         "Id":"5",
-                        "ParentId":"-1",
+                        "ParentId":"7",
                         "IsFixed":"true",
-                        "ResponseParentId":"-1"
+                        "ResponseParentId":"3"
                     },
                     {
                         "ItemContent": "Text Content",
                         "Id":"6",
-                        "ParentId":"-1",
+                        "ParentId":"4",
                         "IsFixed":"false",
-                        "ResponseParentId":"-1"
+                        "ResponseParentId":"3"
                     },
                     {
                         "ItemContent": "Text Content",
                         "Id":"6",
-                        "ParentId":"-1",
+                        "ParentId":"7",
                         "IsFixed":"false",
-                        "ResponseParentId":"-1"
+                        "ResponseParentId":"7"
                     },
                     {
                         "ItemContent": "Text Content",
                         "Id":"6",
-                        "ParentId":"-1",
+                        "ParentId":"7",
                         "IsFixed":"true",
-                        "ResponseParentId":"-1"
+                        "ResponseParentId":"7"
                     },
                     {
                         "ItemContent": "Text Content",
                         "Id":"6",
-                        "ParentId":"-1",
+                        "ParentId":"7",
                         "IsFixed":"false",
-                        "ResponseParentId":"-1"
+                        "ResponseParentId":"7"
                     },
                     {
                         "ItemContent": "Text Content",
                         "Id":"6",
-                        "ParentId":"-1",
+                        "ParentId":"7",
                         "IsFixed":"false",
-                        "ResponseParentId":"-1"
+                        "ResponseParentId":"7"
                     },
                     {
                         "ItemContent": "Text Content",
                         "Id":"6",
-                        "ParentId":"-1",
+                        "ParentId":"7",
                         "IsFixed":"false",
-                        "ResponseParentId":"-1"
+                        "ResponseParentId":"7"
                     },
                     {
                         "ItemContent": "Text Content",
                         "Id":"6",
-                        "ParentId":"-1",
+                        "ParentId":"7",
                         "IsFixed":"false",
-                        "ResponseParentId":"-1"
+                        "ResponseParentId":"7"
                     },
                     {
                         "ItemContent": "Text Content",
                         "Id":"6",
-                        "ParentId":"-1",
+                        "ParentId":"7",
                         "IsFixed":"false",
-                        "ResponseParentId":"-1"
+                        "ResponseParentId":"7"
                     },
                     {
                         "ItemContent": "Text Content",
                         "Id":"6",
-                        "ParentId":"-1",
+                        "ParentId":"7",
                         "IsFixed":"false",
-                        "ResponseParentId":"-1"
+                        "ResponseParentId":"7"
                     },
                     {
                         "ItemContent": "Text Content",
@@ -267,9 +267,9 @@
                     {
                         "ItemContent": "Text Content",
                         "Id":"6",
-                        "ParentId":"-1",
+                        "ParentId":"7",
                         "IsFixed":"false",
-                        "ResponseParentId":"-1"
+                        "ResponseParentId":"7"
                     }
                 ]
             }

@@ -8,7 +8,7 @@ Preview.ComplexCategorization = function (data) {
 	var _common = Preview.Common
 	 ,	$root = $('.table').find('tbody')
 	 ,	_columTitle_tpl = '<td class="tableTitle">{data}</td>'
-	 ,	_content_tpl = '<td class="tableContent"><div class="content_area">{data}</div><div class="tbl_answer"></div></td>'
+	 ,	_content_tpl = '<td class="tableContent"><div class="content_area">{data}</div><div class="tbl_answer"><img style="height:30px;width:30px;" src="{src}"/></div></td>'
 	 ,	_responses = data.Content.Questions[0].Responses
 	 ,	_responseFills = data.Content.Questions[0].ResponseFill;
 
@@ -32,11 +32,14 @@ Preview.ComplexCategorization = function (data) {
 					var currentCell = _responseFills[index];
 					if(currentCell.IsFixed == 'false' && currentCell.ParentId != "-1") {
 						if(currentCell.ParentId == currentCell.ResponseParentId) {
+							$(this).siblings('.tbl_answer').find('img').attr('src','../images/ok_btn.png');
 							//$(this).css('background','none').css('color','green');
+						} else {
+							$(this).siblings('.tbl_answer').find('img').attr('src','../images/close_btn.png');
 						}
 					} else if(currentCell.IsFixed == 'true'){
 						$(this).siblings('.tbl_answer').remove();
-						$(this).css('background','none').css('color','green');
+						$(this).css('background','none').css('color','#409fcf');
 					}
 				});
 			}
@@ -50,6 +53,7 @@ Preview.ComplexCategorization = function (data) {
 
 				$.each(rsps,function (j,rsp) {
 					var type = rsp.ItemType.toLowerCase();
+
 					trContent += getTpl(type).replace('{data}',rsp.ItemContent);
 					if(!rsps[j + 1]) {
 						trContent += '</tr>';
