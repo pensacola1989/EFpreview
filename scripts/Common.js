@@ -190,7 +190,7 @@ Preview.Common.renderLeftSti = function (data) {
 		return ret[type] || '';
 	};
 
-	if(data.Content.Questions.length > 1) {
+	if((data.Content.Questions || data.Content.Question).length > 1) {
 		for(var i = 0; i < questions.length; i++) {
 			var ret = isForAll 
 					? data.Content.Stimulus
