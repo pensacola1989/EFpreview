@@ -1,54 +1,48 @@
 {
     "Common": {
-        "MetaTag": "B1F019",
+        "MetaTag": "B1L005",
         "ActivityType": "SequencingWithOptionalStimulus",
-        "Title": "Activity Title",
-        "Instruction": "Activity Instruction",
-        "ActivityId": "12716",
-        "TemplateId": "104",
-        "StudentId":"12321",
-        "Score":"40",
-        "PointsAchieved":"2",
-        "ActivityPoints":"5",
-        "StartTime": "Tue, 26 Mar 2013 09:30:05 -0800",
-        "EndTime": "Tue, 26 Mar 2013 09:30:05 -0800",
-        "TimeElapsed": "60000"
+        "Instruction": "Listen to the tour guide's explanation and arrange the steps in the order they happen.",
+        "Title": "x",
+        "Version": "1.0",
+        "ActivityId": "16075",
+        "TemplateId": "104"
     },
     "Content": {
-        "Stimulus": "",
+        "Stimulus": "/ActivityResources/16075/a16075_SequencingWithOptionalStimulus0225.mp3?version=41457.6151920949&1316864",
         "Questions": [
             {
-                "Title": "What is Michael’s family name?",
+                "Title": "Animatronic Dinosaurs",
                 "Responses": [
                     {
-                        "ItemContent": "some text 1",
-                        "Order":"1",
-                        "IsDistractor":"false",
+                        "ItemContent": "movements%20become%20radio%20waves",
+                        "Order": "0",
+                        "IsDistractor": "false",
+                        "ResponseOrder":"0"
+                    },
+                    {
+                        "ItemContent": "signals%20are%20sent%20to%20the%20computer",
+                        "Order": "1",
+                        "IsDistractor": "false",
                         "ResponseOrder":"1"
                     },
                     {
-                        "ItemContent": "some text 2",
-                        "Order":"2",
-                        "IsDistractor":"false",
+                        "ItemContent": "signals%20are%20sent%20to%20the%20cylinder",
+                        "Order": "2",
+                        "IsDistractor": "false",
                         "ResponseOrder":"3"
                     },
                     {
-                        "ItemContent": "some text 3",
-                        "Order":"3",
-                        "IsDistractor":"false",
+                        "ItemContent": "pressure%20is%20created%20in%20the%20cylinder",
+                        "Order": "3",
+                        "IsDistractor": "false",
                         "ResponseOrder":"2"
                     },
                     {
-                        "ItemContent": "some text 4",
-                        "Order":"4",
-                        "IsDistractor":"false",
+                        "ItemContent": "the%20body%20of%20the%20animatronic%20moves",
+                        "Order": "4",
+                        "IsDistractor": "false",
                         "ResponseOrder":"4"
-                    },
-                    {
-                        "ItemContent": "some text 5",
-                        "Order":"-1",
-                        "IsDistractor":"true",
-                        "ResponseOrder":"-1"
                     }
                 ]
             }

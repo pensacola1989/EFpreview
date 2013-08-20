@@ -21,7 +21,7 @@ Preview.SequencingWithOptionalStimulus = function (data) {
 					var src = rsp.IsDistractor == 'false' && rsp.Order == rsp.ResponseOrder 
 									? '../images/ok_btn.png' : '../images/close_btn.png';
 
-					content += ITEM_TPL.replace('{data}',rsp.ItemContent).replace('{src}',src);
+					content += ITEM_TPL.replace('{data}',unescape(rsp.ItemContent)).replace('{src}',src);
 				});
 				$root.html(content);
 			}	
@@ -29,6 +29,7 @@ Preview.SequencingWithOptionalStimulus = function (data) {
 
 		function init () {
 			renderRsp();
+			_common.renderLeftSti(data);
 		}
 
 		init();

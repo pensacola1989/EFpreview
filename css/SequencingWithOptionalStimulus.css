@@ -1,4 +1,4 @@
-.seq_area{border-bottom:2px solid #ec923b;width:680px;min-height:500px;margin:auto;margin-top:80px;overflow:hidden;padding:10px;}
+.seq_area{border-bottom:2px solid #ec923b;width:650px;min-height:500px;margin:auto;overflow:hidden;padding:10px;}
 .seq_item{border:1px solid #30789c;min-height:100px;margin-top:10px;background:url('../images/dragger.png') no-repeat 260px 10px #30789c;border-radius:5px;width:580px;}
 .seq_item p{font-size:15px;font-weight:bold;margin:10px;margin-top:20px;color:#FFF;text-align: center;}
 .seq_ans{float:right;height:50px;width:50px;margin-top:-25px;margin-right:-60px;}

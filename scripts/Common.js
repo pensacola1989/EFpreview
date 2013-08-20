@@ -175,7 +175,7 @@ Preview.Common.renderLeftSti = function (data) {
 	 ,  $stiRoot = $('.choice_sti')
 	 ,	imgTemplate = '<div class="sti_img"><img src="{src}"/></div>'
 	 ,	txtTemplate = '<div class="sti_text" style="overflow-y:scroll;">{src}</div>'
-	 ,	type = (data.Content.StimulusItemType || data.Content.Questions[0].StimulusItemType).toLowerCase()
+	 ,	type = (data.Content.StimulusItemType || data.Content.Questions[0].StimulusItemType || 'Audio').toLowerCase()
 	 ,	stimulusArr = []
 	 ,	questions = data.Content.Questions || data.Content.Question
 	 ,	isForAll = data.Content.Stimulus != '' ? true : false;
