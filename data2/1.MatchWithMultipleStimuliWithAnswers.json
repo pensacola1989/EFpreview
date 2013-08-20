@@ -1,76 +1,65 @@
 {
     "Common": {
-        "MetaTag": "B1F019",
+        "MetaTag": "B1L003",
         "ActivityType": "MatchWithMultipleStimuli",
-        "Title": "Restaurant Complaints",
-        "Instruction": "Listen and match the complaints to the pictures.",
-        "ActivityId": "12713",
-        "TemplateId": "100",
-        "StudentId": "12321",
-        "Score": "40",
-        "PointsAchieved": "2",
-        "ActivityPoints": "5",
-        "StartTime": "Tue, 26 Mar 2013 09:30:05 -0800",
-        "EndTime": "Tue, 26 Mar 2013 09:30:05 -0800",
-        "TimeElapsed": "60000"
+        "Instruction": "Listen to some people talking about exhibitions. Match the opinions to the speaker who expresses it.",
+        "Title": "Listening Task 3",
+        "Version": "1.0",
+        "ActivityId": "15948",
+        "TemplateId": "100"
     },
     "Content": {
         "Questions": [
             {
-                "Title": "Listen and match the pictures.",
-                "StimulusItemType": "Text",
+                "Title": "",
+                "StimulusItemType": "Audio",
                 "Stimuli": [
                     {
-                        "ItemContent": "../data/test3.mp3",
+                        "ItemContent": "/ActivityResources/15948/a_MatchWithMultipleStimuli7488707380834967.mp3?version=41443.6436094329&344064",
                         "Id": "1",
-                        "ResponseId": "1",
-                        "AnswerId": "1"
+                        "ResponseId": "1"
                     },
                     {
-                        "ItemContent": "../data/test3.mp3",
-                        "Id": "2",
-                        "ResponseId": "2",
-                        "AnswerId": "2"
-                    },
-                    {
-                        "ItemContent": "../data/test3.mp3",
+                        "ItemContent": "/ActivityResources/15948/a_MatchWithMultipleStimuli2689464674331248.mp3?version=41443.6436166667&282624",
                         "Id": "3",
-                        "ResponseId": "3",
-                        "AnswerId": "4"
+                        "ResponseId": "2"
                     },
                     {
-                        "ItemContent": "../images/avril.jpg",
+                        "ItemContent": "/ActivityResources/15948/a_MatchWithMultipleStimuli07858765101991594.mp3?version=41443.6436208218&294912",
                         "Id": "4",
-                        "ResponseId": "4",
-                        "AnswerId": "5"
+                        "ResponseId": "3"
                     },
                     {
-                        "ItemContent": "/ActivityResources/12713/BK1_Ch1-2_L1_Q5.mp3",
+                        "ItemContent": "/ActivityResources/15948/a_MatchWithMultipleStimuli08758210809901357.mp3?version=41443.6436239005&290816",
                         "Id": "5",
-                        "ResponseId": "5",
-                        "AnswerId": "-1"
+                        "ResponseId": "4"
+                    },
+                    {
+                        "ItemContent": "/ActivityResources/15948/a_MatchWithMultipleStimuli1714788826648146.mp3?version=41456.6067266319&321536",
+                        "Id": "2",
+                        "ResponseId": "5"
                     }
                 ],
                 "ResponseItemType": "Text",
                 "Responses": [
                     {
-                        "ItemContent": "../images/avril.jpg",
+                        "ItemContent": "always enjoys trying things out at these events",
                         "Id": "1"
                     },
                     {
-                        "ItemContent": "../images/avril.jpg",
+                        "ItemContent": "likes listening to\nexperts giving\nspeeches",
                         "Id": "2"
                     },
                     {
-                        "ItemContent": "../images/cover.jpg",
+                        "ItemContent": "likes seeing exhibits from other countries",
                         "Id": "3"
                     },
                     {
-                        "ItemContent": "../images/cover.jpg",
+                        "ItemContent": "enjoys meeting a lot of people at these events",
                         "Id": "4"
                     },
                     {
-                        "ItemContent": "../images/cover.jpg",
+                        "ItemContent": "finds events like these useful for career",
                         "Id": "5"
                     }
                 ]

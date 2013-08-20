@@ -87,10 +87,15 @@ Preview.MatchWithMultipleStimuli = function (data) {
 			};
 
 			var content = '';
-			$.each(responses,function (index,rsp) {
-				var targetSti = drpStimulus[index];
-				var src = targetSti.ResponseId == targetSti.AnswerId ? '../images/ok_btn.png' : '../images/close_btn.png';
-				content += getTPL(type).replace('{data}',rsp.ItemContent).replace('{src}',src);
+			// $.each(responses,function (index,rsp) {
+			// 	var targetSti = drpStimulus[index];
+			// 	var src = targetSti.ResponseId == targetSti.AnswerId ? '../images/ok_btn.png' : '../images/close_btn.png';
+			// 	content += getTPL(type).replace('{data}',rsp.ItemContent).replace('{src}',src);
+			// });
+			$.each(drpStimulus,function (index,drp) {
+				var targetRes = responses[index];
+				var src = drp.ResponseId == drp.AnswerId ? '../images/ok_btn.png' : '../images/close_btn.png';
+				content += getTPL(type).replace('{data}',responses[index].ItemContent).replace('{src}',src);
 			});
 			$root.find(DROPZONE_C).html(content);
 		}
