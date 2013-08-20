@@ -11,7 +11,7 @@
 .gap{border:1px solid green;float:left;height:55px;margin:10px;line-height:55px;width:100px;overflow:hidden;text-align:center;}
 .para{border:1px solid red;overflow:hidden;float:left;height:55px;margin:10px;line-height:55px;}
 
-.article{line-height:50px;}
+.article{line-height:10px;}
 .article input{text-align:center;font-family:Arial;font-size:14px;color:#FFF;height:40px;margin:10px;background:url('../images/dragger.png') no-repeat center 10px #409fcf;min-width:100px;border:none;padding:5px;border-radius:5px;-webkit-box-shadow: 2px 1px 2px rgba(50, 50, 50, 0.75);
 -moz-box-shadow:    2px 1px 2px rgba(50, 50, 50, 0.75);
 box-shadow:         2px 1px 2px rgba(50, 50, 50, 0.75);}

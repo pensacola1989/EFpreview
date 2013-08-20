@@ -4,3 +4,4 @@
 .cate_answer{float:right;height:30px;width:30px;margin-top:-80px;}
 .cate_answer img{height:30px;}
 .sti_text textarea{border:none;border-bottom:2px solid #ec923b;height:500px;/*overflow:scroll;*/width:250px;border-top:2px solid #b4d6eb;padding:10px;font-size:14px;color:#409fcf;}
+.cate_item p{height: 30px;overflow: hidden;}

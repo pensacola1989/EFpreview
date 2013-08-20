@@ -1,0 +1,82 @@
+{
+    "Common": {
+        "MetaTag": "B1F019",
+        "ActivityType": "MatchWithOneStimuli",
+        "Title": "Restaurant Complaints",
+        "Instruction": "Listen and match the complaints to the pictures.",
+        "ActivityId": "12714",
+        "TemplateId": "101",
+        "StudentId": "12321",
+        "Score": "40",
+        "PointsAchieved": "2",
+        "ActivityPoints": "5",
+        "StartTime": "Tue, 26 Mar 2013 09:30:05 -0800",
+        "EndTime": "Tue, 26 Mar 2013 09:30:05 -0800",
+        "TimeElapsed": "60000"
+    },
+    "Content": {
+        "Questions": [
+            {
+                "Title": "Listen and match the pictures.",
+                "StimulusItemType": "Audio",
+                "Stimulus": "../data/test0.mp3",
+                "DropzoneStimulusItemType": "Text",
+                "DropzoneStimuli": [
+                    {
+                        "ItemContent": "../data/test.mp3",
+                        "Id": "1",
+                        "ResponseId": "1",
+                        "AnswerId": "1"
+                    },
+                    {
+                        "ItemContent": "../data/test2.mp3",
+                        "Id": "2",
+                        "ResponseId": "2",
+                        "AnswerId": "2"
+                    },
+                    {
+                        "ItemContent": "../data/test3.mp3",
+                        "Id": "3",
+                        "ResponseId": "3",
+                        "AnswerId": "4"
+                    },
+                    {
+                        "ItemContent": "../data/test4.mp3",
+                        "Id": "4",
+                        "ResponseId": "4",
+                        "AnswerId": "5"
+                    },
+                    {
+                        "ItemContent": "../images/img.jpg",
+                        "Id": "5",
+                        "ResponseId": "5",
+                        "AnswerId": "-1"
+                    }
+                ],
+                "ResponseItemType": "Image",
+                "Responses": [
+                    {
+                        "ItemContent": "../data/test2.mp3",
+                        "Id": "1"
+                    },
+                    {
+                        "ItemContent": "../data/test3.mp3",
+                        "Id": "2"
+                    },
+                    {
+                        "ItemContent": "../data/test4.mp3",
+                        "Id": "3"
+                    },
+                    {
+                        "ItemContent": "There are two erasers and pens.",
+                        "Id": "4"
+                    },
+                    {
+                        "ItemContent": "../images/img.jpg",
+                        "Id": "5"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -6,13 +6,13 @@ $(document).ready(function () {
 
 Preview.SimpleCategorization = function (data) {
 	
-	var $root = $('.category_container');
-	var CATEGORY_C = '.category';
-	var _common = Preview.Common;
-	var _cateContainer_tpl = '<div class="category"></div>';
-	var _categoryItem_tpl = '<div class="cate_holder"><div class="cate_item"><p>{data}</p></div><div class="cate_answer"><img src="{src}"/></div></div>';
-	var _categories = (data.Content.Questions || data.Content.Question)[0].Categories;
-	var _responseFills = (data.Content.Questions || data.Content.Question)[0].ResponseFills;
+	var $root = $('.category_container')
+	 ,	CATEGORY_C = '.category'
+	 ,	_common = Preview.Common
+	 ,	_cateContainer_tpl = '<div class="category"></div>'
+	 ,	_categoryItem_tpl = '<div class="cate_holder"><div class="cate_item" title="{data}"><p>{data}</p></div><div class="cate_answer"><img src="{src}"/></div></div>'
+	 ,	_categories = (data.Content.Questions || data.Content.Question)[0].Categories
+	 ,	_responseFills = (data.Content.Questions || data.Content.Question)[0].ResponseFills;
 
 	return (function () {
 		
@@ -34,7 +34,7 @@ Preview.SimpleCategorization = function (data) {
 				$.each(_responseFills,function  (index,fill) {
 					if(fill.Isfixed != 'false') {
 						var isCorrect = fill.CategoryId == fill.ResponseCategoryId ? '../images/ok_btn.png' : '../images/close_btn.png';
-						content = _categoryItem_tpl.replace('{data}',fill.ItemContent).replace('{src}',isCorrect);
+						content = _categoryItem_tpl.replace('{data}',unescape(fill.ItemContent)).replace('{data}',unescape(fill.ItemContent)).replace('{src}',isCorrect);
 						$('.category').eq(fill.CategoryId - 1).append(content);
 					}
 				});				

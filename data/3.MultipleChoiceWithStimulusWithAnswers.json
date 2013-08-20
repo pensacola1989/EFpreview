@@ -1,148 +1,202 @@
 {
     "Common": {
-        "MetaTag": "B1F019",
+        "MetaTag": "B1L009",
         "ActivityType": "MultipleChoiceWithStimulus",
-        "Title": "Activity Title",
-        "Instruction": "Activity Instruction",
-        "ActivityId": "12715",
-        "TemplateId": "102",
-        "StudentId": "12321",
-        "Score": "40",
-        "PointsAchieved": "2",
-        "ActivityPoints": "5",
-        "StartTime": "Tue, 26 Mar 2013 09:30:05 -0800",
-        "EndTime": "Tue, 26 Mar 2013 09:30:05 -0800",
-        "TimeElapsed": "60000"
+        "Instruction": "Read about the five activities. Then listen to the speakers talk about their interests and answer the questions.",
+        "Title": "x",
+        "Version": "1.0",
+        "ActivityId": "15920",
+        "TemplateId": "102"
     },
     "Content": {
-        "StimulusItemType": "Text",
-        "Stimulus": "../data/test.mp3",
         "Questions": [
             {
-                "Title": "What is Michael’s family name?",
-                "Stimulus": "",
-                "ResponseItemType": "Image",
+                "Title": "Which activity would she enjoy?",
+                "Stimulus": "/ActivityResources/15920/a_MultipleChoiceWithStimuli_stiAudio37575396546162665.mp3?version=41453.4623096644&196608",
+                "ResponseItemType": "Text",
                 "Responses": [
                     {
-                        "ItemContent": "../images/avril.jpg",
+                        "ItemContent": "Walk through the Blue Forest. Far away from cities with lots of fresh air, see lots of nature!",
                         "Id": "1",
                         "IsAnswer": "true",
                         "IsSelected": "true"
                     },
                     {
-                        "ItemContent": "../images/avril.jpg",
+                        "ItemContent": "Sail around the cliffs of Black Island. Organized groups of sailors. Prizes for the fastest teams!",
                         "Id": "2",
                         "IsAnswer": "false",
                         "IsSelected": "false"
                     },
                     {
-                        "ItemContent": "../images/cover.jpg",
+                        "ItemContent": "3-day walk in the Old Hills. See the spectacular mountain views and beautiful old villages and castles.",
                         "Id": "3",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "Climb the famous Rocky Mountains. Difficult climbing for those who want to achieve big things!",
+                        "Id": "4",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "13-mile run. Race through the streets of the capital city. Not for beginners!",
+                        "Id": "5",
                         "IsAnswer": "false",
                         "IsSelected": "false"
                     }
                 ]
             },
             {
-                "Title": "How old is Michael?",
-                "Stimulus": "",
+                "Title": "Which activity would she enjoy?",
+                "Stimulus": "/ActivityResources/15920/a_MultipleChoiceWithStimuli_stiAudio6702335099689662.mp3?version=41453.4626596181&172032",
                 "ResponseItemType": "Text",
                 "Responses": [
                     {
-                        "ItemContent": "9",
+                        "ItemContent": "Walk through the Blue Forest. Far away from cities with lots of fresh air, see lots of nature!",
                         "Id": "1",
                         "IsAnswer": "false",
                         "IsSelected": "false"
                     },
                     {
-                        "ItemContent": "10",
+                        "ItemContent": "Sail around the cliffs of Black Island. Organized groups of sailors. Prizes for the fastest teams!",
                         "Id": "2",
                         "IsAnswer": "false",
                         "IsSelected": "false"
                     },
                     {
-                        "ItemContent": "12",
+                        "ItemContent": "3-day walk in the Old Hills. See the spectacular mountain views and beautiful old villages and castles.",
                         "Id": "3",
-                        "IsAnswer": "true",
-                        "IsSelected": "true"
-                    }
-                ]
-            },
-            {
-                "Title": "Where is Michael from?",
-                "Stimulus": "",
-                "ResponseItemType": "Text",
-                "Responses": [
-                    {
-                        "ItemContent": "China",
-                        "Id": "1",
-                        "IsAnswer": "false",
-                        "IsSelected": "false"
-                    },
-                    {
-                        "ItemContent": "Russia",
-                        "Id": "2",
-                        "IsAnswer": "false",
-                        "IsSelected": "false"
-                    },
-                    {
-                        "ItemContent": "The USA",
-                        "Id": "3",
-                        "IsAnswer": "true",
-                        "IsSelected": "true"
-                    }
-                ]
-            },
-            {
-                "Title": "What does his father do?",
-                "Stimulus": "",
-                "ResponseItemType": "Text",
-                "Responses": [
-                    {
-                        "ItemContent": "Doctor",
-                        "Id": "1",
-                        "IsAnswer": "false",
-                        "IsSelected": "true"
-                    },
-                    {
-                        "ItemContent": "Photographer",
-                        "Id": "2",
                         "IsAnswer": "true",
                         "IsSelected": "false"
                     },
                     {
-                        "ItemContent": "Swimmer",
-                        "Id": "3",
+                        "ItemContent": "Climb the famous Rocky Mountains. Difficult climbing for those who want to achieve big things!",
+                        "Id": "4",
+                        "IsAnswer": "false",
+                        "IsSelected": "true"
+                    },
+                    {
+                        "ItemContent": "13-mile run. Race through the streets of the capital city. Not for beginners!",
+                        "Id": "5",
                         "IsAnswer": "false",
                         "IsSelected": "false"
                     }
                 ]
             },
             {
-                "Title": "What color does Michael like?",
-                "Stimulus": "",
+                "Title": "Which activity would he enjoy?",
+                "Stimulus": "/ActivityResources/15920/a_MultipleChoiceWithStimuli_stiAudio7340251342393458.mp3?version=41453.462981713&176128",
                 "ResponseItemType": "Text",
                 "Responses": [
                     {
-                        "ItemContent": "blue",
+                        "ItemContent": "Walk through the Blue Forest. Far away from cities with lots of fresh air, see lots of nature!",
                         "Id": "1",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "Sail around the cliffs of Black Island. Organized groups of sailors. Prizes for the fastest teams!",
+                        "Id": "2",
+                        "IsAnswer": "true",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "3-day walk in the Old Hills. See the spectacular mountain views and beautiful old villages and castles.",
+                        "Id": "3",
                         "IsAnswer": "false",
                         "IsSelected": "true"
                     },
                     {
-                        "ItemContent": "green",
+                        "ItemContent": "Climb the famous Rocky Mountains. Difficult climbing for those who want to achieve big things!",
+                        "Id": "4",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "13-mile run. Race through the streets of the capital city. Not for beginners!",
+                        "Id": "5",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    }
+                ]
+            },
+            {
+                "Title": "Which activity would he enjoy?",
+                "Stimulus": "/ActivityResources/15920/a_MultipleChoiceWithStimuli_stiAudio02850054996088147.mp3?version=41453.4633352778&233472",
+                "ResponseItemType": "Text",
+                "Responses": [
+                    {
+                        "ItemContent": "Walk through the Blue Forest. Far away from cities with lots of fresh air, see lots of nature!",
+                        "Id": "1",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "Sail around the cliffs of Black Island. Organized groups of sailors. Prizes for the fastest teams!",
                         "Id": "2",
                         "IsAnswer": "false",
                         "IsSelected": "false"
                     },
                     {
-                        "ItemContent": "red",
+                        "ItemContent": "3-day walk in the Old Hills. See the spectacular mountain views and beautiful old villages and castles.",
                         "Id": "3",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "Climb the famous Rocky Mountains. Difficult climbing for those who want to achieve big things!",
+                        "Id": "4",
+                        "IsAnswer": "true",
+                        "IsSelected": "true"
+                    },
+                    {
+                        "ItemContent": "13-mile run. Race through the streets of the capital city. Not for beginners!",
+                        "Id": "5",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    }
+                ]
+            },
+            {
+                "Title": "Which activity would she enjoy?",
+                "Stimulus": "/ActivityResources/15920/a_MultipleChoiceWithStimuli_stiAudio8403296992182732.mp3?version=41453.4635372917&188416",
+                "ResponseItemType": "Text",
+                "Responses": [
+                    {
+                        "ItemContent": "Walk through the Blue Forest. Far away from cities with lots of fresh air, see lots of nature!",
+                        "Id": "1",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "Sail around the cliffs of Black Island. Organized groups of sailors. Prizes for the fastest teams!",
+                        "Id": "2",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "3-day walk in the Old Hills. See the spectacular mountain views and beautiful old villages and castles.",
+                        "Id": "3",
+                        "IsAnswer": "false",
+                        "IsSelected": "false"
+                    },
+                    {
+                        "ItemContent": "Climb the famous Rocky Mountains. Difficult climbing for those who want to achieve big things!",
+                        "Id": "4",
+                        "IsAnswer": "false",
+                        "IsSelected": "true"
+                    },
+                    {
+                        "ItemContent": "13-mile run. Race through the streets of the capital city. Not for beginners!",
+                        "Id": "5",
                         "IsAnswer": "true",
                         "IsSelected": "false"
                     }
                 ]
             }
-        ]
+        ],
+        "Stimulus": "",
+        "StimulusItemType": "Audio"
     }
 }

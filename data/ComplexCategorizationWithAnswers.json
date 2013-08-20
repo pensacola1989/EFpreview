@@ -1,275 +1,169 @@
 {
     "Common": {
-        "MetaTag": "B1F019",
+        "MetaTag": "B2L005",
         "ActivityType": "ComplexCategorization",
-        "Title": "Activity Title",
-        "Instruction": "Activity Instruction",
-        "ActivityId": "12716",
-        "TemplateId": "106",
-        "StudentId":"12321",
-        "Score":"40",
-        "PointsAchieved":"2",
-        "ActivityPoints":"5",
-        "StartTime": "Tue, 26 Mar 2013 09:30:05 -0800",
-        "EndTime": "Tue, 26 Mar 2013 09:30:05 -0800",
-        "TimeElapsed": "60000"
+        "Instruction": "Four people are talking about their life and their friends. Listen and complete the chart.",
+        "Title": "Listening Task 4",
+        "Version": "1.0",
+        "ActivityId": "16006",
+        "TemplateId": "100"
     },
     "Content": {
-        "StimulusItemType":"Text",
-        "Stimulus":"Text here",
+        "StimulusItemType": "Audio",
+        "Stimulus": "/ActivityResources/16006/a_ComplexCategorization_audio3454639876727015.mp3?version=41445.6743139236&1523712",
         "Questions": [
             {
-                "Title": "What is Michael’s family name?",
+                "Title": "",
                 "Responses": [
                     [
                         {
                             "ItemType": "ColumnTitle",
-                            "ItemContent": "Category Heading",
-                            "Id":"1"
+                            "ItemContent": "",
+                            "Id": "1"
                         },
                         {
                             "ItemType": "ColumnTitle",
-                            "ItemContent": "Category Heading",
-                            "Id":"2"
+                            "ItemContent": "About Themselves",
+                            "Id": "2"
                         },
                         {
                             "ItemType": "ColumnTitle",
-                            "ItemContent": "Category Heading",
-                            "Id":"3"
-                        },
-                        {
-                            "ItemType": "ColumnTitle",
-                            "ItemContent": "Category Heading",
-                            "Id":"4"
-                        },
-                        {
-                            "ItemType": "ColumnTitle",
-                            "ItemContent": "Category Heading",
-                            "Id":"5"
+                            "ItemContent": "About Their Friends",
+                            "Id": "3"
                         }
                     ],
                     [
                         {
                             "ItemType": "RowLabel",
-                            "ItemContent": "Row Label 1",
-                            "Id":"6"
+                            "ItemContent": "Barbara",
+                            "Id": "5"
                         },
                         {
                             "ItemType": "Cell",
-                            "ItemContent": "sdfsdfsd",
-                            "Id":"7"
+                            "ItemContent": "bored with life",
+                            "Id": "6"
                         },
                         {
                             "ItemType": "Cell",
-                            "ItemContent": "sdfsdf",
-                            "Id":"8"
-                        },
-                        {
-                            "ItemType": "cell",
-                            "ItemContent": "Category Heading",
-                            "Id":"9"
-                        },
-                        {
-                            "ItemType": "cell",
-                            "ItemContent": "Category Heading",
-                            "Id":"10"
+                            "ItemContent": "wants to make new friends ",
+                            "Id": "7"
                         }
                     ],
                     [
                         {
                             "ItemType": "RowLabel",
-                            "ItemContent": "Row Label 2",
-                            "Id":"11"
+                            "ItemContent": "Frank",
+                            "Id": "9"
                         },
                         {
                             "ItemType": "Cell",
-                            "ItemContent": "sdfsdf",
-                            "Id":"12"
+                            "ItemContent": "feels very guilty",
+                            "Id": "10"
                         },
                         {
                             "ItemType": "Cell",
-                            "ItemContent": "fixed content here",
-                            "Id":"13"
-                        },
-                        {
-                            "ItemType": "cell",
-                            "ItemContent": "Category Heading",
-                            "Id":"14"
-                        },
-                        {
-                            "ItemType": "cell",
-                            "ItemContent": "Category Heading",
-                            "Id":"15"
+                            "ItemContent": "misses them",
+                            "Id": "11"
                         }
                     ],
                     [
                         {
                             "ItemType": "RowLabel",
-                            "ItemContent": "Row Label 2",
-                            "Id":"16"
+                            "ItemContent": "Kim",
+                            "Id": "13"
                         },
                         {
                             "ItemType": "Cell",
-                            "ItemContent": "sdfsdfsd",
-                            "Id":"17"
+                            "ItemContent": "feels really depressed",
+                            "Id": "14"
                         },
                         {
                             "ItemType": "Cell",
-                            "ItemContent": "fixed content here",
-                            "Id":"18"
-                        },
-                        {
-                            "ItemType": "cell",
-                            "ItemContent": "Category Heading",
-                            "Id":"19"
-                        },
-                        {
-                            "ItemType": "cell",
-                            "ItemContent": "Category Heading",
-                            "Id":"20"
+                            "ItemContent": "appreciates what they did",
+                            "Id": "15"
                         }
                     ],
                     [
                         {
                             "ItemType": "RowLabel",
-                            "ItemContent": "Row Label 2",
-                            "Id":"21"
+                            "ItemContent": "Douglas",
+                            "Id": "16"
                         },
                         {
                             "ItemType": "Cell",
-                            "ItemContent": "sdfsdfsdfsdfdsfsdf",
-                            "Id":"22"
+                            "ItemContent": "enjoys life",
+                            "Id": "17"
                         },
                         {
                             "ItemType": "Cell",
-                            "ItemContent": "fixed content here",
-                            "Id":"23"
-                        },
-                        {
-                            "ItemType": "cell",
-                            "ItemContent": "Category Heading",
-                            "Id":"24"
-                        },
-                        {
-                            "ItemType": "cell",
-                            "ItemContent": "Category Heading",
-                            "Id":"25"
+                            "ItemContent": "really irritated",
+                            "Id": "18"
                         }
                     ]
-
                 ],
-                "ResponseFill":[
+                "ResponseFill": [
                     {
-                        "ItemContent": "Text Content",
-                        "Id":"1",
-                        "ParentId":"5",
-                        "IsFixed":"false",
-                        "ResponseParentId":"5"
-                    },
-                    {
-                        "ItemContent": "Text Content",
-                        "Id":"2",
-                        "ParentId":"6",
-                        "IsFixed":"true",
+                        "ItemContent": "bored with life",
+                        "Id": "1",
+                        "ParentId": "6",
+                        "IsFixed": "false",
                         "ResponseParentId":"6"
                     },
                     {
-                        "ItemContent": "Text Content",
-                        "Id":"3",
-                        "ParentId":"8",
-                        "IsFixed":"false",
-                        "ResponseParentId":"8"
+                        "ItemContent": "wants to make new friends ",
+                        "Id": "2",
+                        "ParentId": "7",
+                        "IsFixed": "true",
+                        "ResponseParentId":"-1"
                     },
                     {
-                        "ItemContent": "Text Content",
-                        "Id":"4",
-                        "ParentId":"7",
-                        "IsFixed":"false",
-                        "ResponseParentId":"7"
+                        "ItemContent": "feels very guilty",
+                        "Id": "3",
+                        "ParentId": "10",
+                        "IsFixed": "false",
+                        "ResponseParentId":"10"
                     },
                     {
-                        "ItemContent": "Text Content",
-                        "Id":"5",
-                        "ParentId":"7",
-                        "IsFixed":"true",
-                        "ResponseParentId":"3"
+                        "ItemContent": "misses them",
+                        "Id": "4",
+                        "ParentId": "11",
+                        "IsFixed": "true",
+                        "ResponseParentId":"11"
                     },
                     {
-                        "ItemContent": "Text Content",
-                        "Id":"6",
-                        "ParentId":"4",
-                        "IsFixed":"false",
-                        "ResponseParentId":"3"
+                        "ItemContent": "feels really depressed",
+                        "Id": "5",
+                        "ParentId": "14",
+                        "IsFixed": "false",
+                        "ResponseParentId":"14"
                     },
                     {
-                        "ItemContent": "Text Content",
-                        "Id":"6",
-                        "ParentId":"7",
-                        "IsFixed":"false",
-                        "ResponseParentId":"7"
+                        "ItemContent": "appreciates what they did",
+                        "Id": "6",
+                        "ParentId": "15",
+                        "IsFixed": "false",
+                        "ResponseParentId":"5"
                     },
                     {
-                        "ItemContent": "Text Content",
-                        "Id":"6",
-                        "ParentId":"7",
-                        "IsFixed":"true",
-                        "ResponseParentId":"7"
+                        "ItemContent": "enjoys life",
+                        "Id": "7",
+                        "ParentId": "17",
+                        "IsFixed": "true",
+                        "ResponseParentId":"17"
                     },
                     {
-                        "ItemContent": "Text Content",
-                        "Id":"6",
-                        "ParentId":"7",
-                        "IsFixed":"false",
-                        "ResponseParentId":"7"
+                        "ItemContent": "really irritated",
+                        "Id": "8",
+                        "ParentId": "18",
+                        "IsFixed": "false",
+                        "ResponseParentId":"18"
                     },
                     {
-                        "ItemContent": "Text Content",
-                        "Id":"6",
-                        "ParentId":"7",
-                        "IsFixed":"false",
-                        "ResponseParentId":"7"
-                    },
-                    {
-                        "ItemContent": "Text Content",
-                        "Id":"6",
-                        "ParentId":"7",
-                        "IsFixed":"false",
-                        "ResponseParentId":"7"
-                    },
-                    {
-                        "ItemContent": "Text Content",
-                        "Id":"6",
-                        "ParentId":"7",
-                        "IsFixed":"false",
-                        "ResponseParentId":"7"
-                    },
-                    {
-                        "ItemContent": "Text Content",
-                        "Id":"6",
-                        "ParentId":"7",
-                        "IsFixed":"false",
-                        "ResponseParentId":"7"
-                    },
-                    {
-                        "ItemContent": "Text Content",
-                        "Id":"6",
-                        "ParentId":"7",
-                        "IsFixed":"false",
-                        "ResponseParentId":"7"
-                    },
-                    {
-                        "ItemContent": "Text Content",
-                        "Id":"6",
-                        "ParentId":"15",
-                        "IsFixed":"false",
-                        "ResponseParentId":"15"
-                    },
-                    {
-                        "ItemContent": "Text Content",
-                        "Id":"6",
-                        "ParentId":"7",
-                        "IsFixed":"false",
-                        "ResponseParentId":"7"
+                        "ItemContent": "became famous",
+                        "Id": "9",
+                        "ParentId": "-1",
+                        "IsFixed": "false",
+                        "ResponseParentId":"5"
                     }
                 ]
             }

@@ -6,3 +6,4 @@ td{width:100px;height:50px;margin:10px;padding:5px;}
 .tableContent{position:relative;}
 .tbl_answer{height:30px;width:30px;position:absolute;margin-top:-70px;margin-left:80px;}
 .tbl_answer img{z-index: 10000;}
+.sti_text{border:none;border-bottom:2px solid #ec923b;height:500px;/*overflow:scroll;*/width:250px;border-top:2px solid #b4d6eb;padding:10px;font-size:14px;/*color:#409fcf;*/}

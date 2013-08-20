@@ -1,79 +1,77 @@
 {
     "Common": {
-        "MetaTag": "B1F019",
+        "MetaTag": "x",
         "ActivityType": "MatchWithOneStimuli",
-        "Title": "Restaurant Complaints",
-        "Instruction": "Listen and match the complaints to the pictures.",
-        "ActivityId": "12714",
-        "TemplateId": "101",
-        "StudentId": "12321",
-        "Score": "40",
-        "PointsAchieved": "2",
-        "ActivityPoints": "5",
-        "StartTime": "Tue, 26 Mar 2013 09:30:05 -0800",
-        "EndTime": "Tue, 26 Mar 2013 09:30:05 -0800",
-        "TimeElapsed": "60000"
+        "Instruction": "Read the invitation and match the numbers to the phrases. One option is not used.",
+        "Title": "Reading",
+        "Version": "1.0",
+        "ActivityId": "15974",
+        "TemplateId": "101"
     },
     "Content": {
         "Questions": [
             {
                 "Title": "Listen and match the pictures.",
                 "StimulusItemType": "Audio",
-                "Stimulus": "../data/test0.mp3",
-                "DropzoneStimulusItemType": "Text",
+                "Stimulus": "http://10.128.34.190/ActivityResources/16021/a_MatchWithOneStimuli39676963980309665.mp3",
+                "DropzoneStimulusItemType": "Image",
                 "DropzoneStimuli": [
                     {
-                        "ItemContent": "../data/test.mp3",
+                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "1",
                         "ResponseId": "1",
                         "AnswerId": "1"
                     },
                     {
-                        "ItemContent": "../data/test2.mp3",
+                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "2",
                         "ResponseId": "2",
+                        "AnswerId": "3"
+                    },
+                    {
+                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
+                        "Id": "3",
+                        "ResponseId": "3",
                         "AnswerId": "2"
                     },
                     {
-                        "ItemContent": "../data/test3.mp3",
-                        "Id": "3",
-                        "ResponseId": "3",
+                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
+                        "Id": "4",
+                        "ResponseId": "4",
                         "AnswerId": "4"
                     },
                     {
-                        "ItemContent": "../data/test4.mp3",
-                        "Id": "4",
-                        "ResponseId": "4",
-                        "AnswerId": "5"
-                    },
-                    {
-                        "ItemContent": "../images/img.jpg",
+                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "5",
                         "ResponseId": "5",
-                        "AnswerId": "-1"
+                        "AnswerId": "5"
                     }
                 ],
                 "ResponseItemType": "Image",
                 "Responses": [
                     {
-                        "ItemContent": "../data/test2.mp3",
+                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "1"
                     },
                     {
-                        "ItemContent": "../data/test3.mp3",
+                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "2"
                     },
                     {
-                        "ItemContent": "../data/test4.mp3",
+                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "3"
                     },
                     {
-                        "ItemContent": "There are two erasers and pens.",
+                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "4"
                     },
                     {
-                        "ItemContent": "../images/img.jpg",
+                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "5"
+                    },
+                    {
+                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
+                        "Id": "6"
                     }
                 ]
             }

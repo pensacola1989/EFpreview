@@ -1,4 +1,4 @@
-.sti_text textarea{border:none;border-bottom:2px solid #ec923b;height:500px;/*overflow:scroll;*/width:250px;border-top:2px solid #b4d6eb;padding:10px;font-size:14px;color:#409fcf;}
+.sti_text{border:none;border-bottom:2px solid #ec923b;height:500px;/*overflow:scroll;*/width:250px;border-top:2px solid #b4d6eb;padding:10px;font-size:14px;/*color:#409fcf;*/}
 .select > p { width: 500px;float: left;}
 .txt_ans {height:25px;float:left;margin: 10px;}
 
@@ -13,3 +13,12 @@
 
 .article{line-height:50px;}
 .article input{height:50px;margin:10px;background:url('../images/Gap_rsp.png') no-repeat;width:120px;border:none;padding:5px;}
+
+.res_item p{line-height: 30px;font-size: 13px;font-weight: normal;}
+.choice_sti{float:left;width:280px;height:560px;margin-left:50px;margin-top:30px;}
+.choice_res{float:right;height:560px;width:600px;margin-right:50px;margin-top:30px;}
+.choice_sti img{max-width:280px;}
+.unselect.res_item{border:1px solid #409fcf;min-height:48px;margin-bottom:10px;font-weight:bold;background-color:#409fcf;color:#FFF;text-align:center;line-height:48px;border-radius:3px;-moz-box-shadow: 1px 5px 6px -5px #000;
+-webkit-box-shadow: 1px 5px 6px -5px #000;
+box-shadow: 1px 5px 6px -5px #000;}
+.select.res_item{width:560px;margin-left:20px;overflow:hidden;min-height:40px;border:1px solid #409fcf;margin-bottom:10px;font-weight:bold;background-color:#30789c;color:#FFF;text-align:center;line-height:40px;border-radius:3px;}

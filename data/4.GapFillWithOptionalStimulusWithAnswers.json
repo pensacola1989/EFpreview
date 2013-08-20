@@ -1,63 +1,45 @@
 {
     "Common": {
-        "MetaTag": "B1F019",
+        "MetaTag": "B1R007",
         "ActivityType": "GapFillWithOptionalStimulus",
-        "Title": "Activity Title",
-        "Instruction": "Activity Instruction",
-        "ActivityId": "12716",
-        "TemplateId": "103",
-        "StudentId": "12321",
-        "Score": "40",
-        "PointsAchieved": "2",
-        "ActivityPoints": "5",
-        "StartTime": "Tue, 26 Mar 2013 09:30:05 -0800",
-        "EndTime": "Tue, 26 Mar 2013 09:30:05 -0800",
-        "TimeElapsed": "60000"
+        "Instruction": "Read again and fill in the blanks with the correct names.",
+        "Title": "Reading Task 3",
+        "Version": "1.0",
+        "ActivityId": "16041",
+        "TemplateId": "103"
     },
     "Content": {
-        "StimulusItemType": "Audio",
-        "Stimulus": "../data/test3.mp3",
+        "StimulusItemType": "text",
+        "Stimulus": "<p><u>Teenagers from around the world:</u><br /><br /><strong>Andor</strong><br />Now that I&#39;m fifteen my parents give me five thousand forint per month. I know that it&#39;s not much, and I hate digging and planting flowers and stuff. But I&rsquo;m going to the&nbsp;<em>kerepar</em>&nbsp;store next month and I really need the money. I&#39;m tired of walking to school every day, and it&rsquo;ll be great to ride past my friends so fast!<br /><br /><strong>Helga</strong><br />My mother doesn&#39;t give me much pocket money each week &ndash;&nbsp;just a few hundred kronor &ndash; and you can&#39;t buy much with that, can you? Usually I spend it on&nbsp;<em>saelgaeti&nbsp;</em>from the local stores. I really like the lemon flavored ones, but I usually give half of them to my baby brother. My parents are always too busy to look after him.<br /><br /><strong>Loto</strong><br />Even though my parents are some of the wealthiest people on the island, they only give me twenty tala per week. After all the time that I spent helping my little sister to learn stuff, they only give me this little amount of money. I&#39;m saving my money to go to the&nbsp;<em>tusi</em>&nbsp;store. They&#39;re selling the latest tusi&nbsp;by the famous novelist, Jane Mino. I love her adventure stories!<br /><br /><strong>Mamello</strong><br />Each month I get forty loti from my dad to spend. His shirts always need cleaning after he finishes work, so he gives them to me. I&rsquo;d love to buy a new bike or something, but I&#39;m saving all my money for the new&nbsp;<em>apara</em>&nbsp;I&#39;ve seen in the store. I want something great to wear with my new shoes at my cousin&#39;s wedding next month.<br /><br /><strong>Arturo</strong><br />My sixteenth birthday was last week, and can you believe, my father gave me one hundred sol!&nbsp;I&#39;ve never had this much money in my whole life. Next week, I&#39;m going straight to the&nbsp;<em>sapatu</em>&nbsp;store to buy the best that I can. No more walking with bare feet for me! Now I can really give our pets some good exercise.</p>",
         "Questions": [
             {
-                "Title": "What is Michael’s family name?",
+                "Title": "",
                 "Stimulus": "",
                 "Response": {
-                    "ItemContent": "Jim: Did you try<gap>out</gap><gap>for</gap> the swimming club? <br/> <br/> Sabrina: Yeah, on Saturday. <br/> <br/> Jim: And? <br/> <br/> Sabrina: I still don’t know if I made it. <br/> <br/> Jim: When do you think you’ll know? <br/> <br/> Sabrina: I’m not sure. I want to call the club leader and find<gap>out</gap> , but I’m too nervous. <br/> <br/> Jim: Did you swim well? <br/> <br/> Sabrina: I swam really slowly at first, and I had trouble keeping<gap>up</gap><gap>with</gap> the other swimmers. <br/> <br/> Jim: Oh … <br/> <br/> Sabrina: But near the end of the race I sped<gap>up</gap> . <br/> <br/> Jim: What happened next? <br/> <br/> Sabrina: I had the lead, but then I gave<gap>it</gap><gap>up</gap> in the last minute. I came in second. <br/> <br/> Jim: Second is a good result, and it’s great that you took the challenge<gap>on</gap> . <br/> <br/> Sabrina: It might not be good enough to make<gap>it</gap><gap>into</gap> the club. <br/> <br/> Jim: I think you’ve got a great chance. But even if you don’t, keep<gap>at</gap> it. You’re a great swimmer. <br/> <br/> Sabrina: I’ll see. I hope so. <br/> <br/>",
+                    "ItemContent": "<p>This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;babysitter:&nbsp;<gap>Helga</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;dog&nbsp;walker: <gap>Arturo</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;tutor:&nbsp;<gap>Loto</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;to&nbsp;do&nbsp;the&nbsp;laundry: <gap>Mamello</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;gardener: <gap>Andor</gap><br /><br />&nbsp;</p>",
                     "Fill": [
-                        "out",
-                        "for",
-                        "up",
-                        "with",
-                        "it",
-                        "on",
-                        "into",
-                        "at",
-                        "hope",
-                        "so"
+                        "Helga",
+                        "Arturo",
+                        "Loto",
+                        "Mamello",
+                        "Andor"
                     ],
-                    "AnswerContent": "Jim: Did you try<gap>out</gap><gap>in</gap> the swimming club? <br/> <br/> Sabrina: Yeah, on Saturday. <br/> <br/> Jim: And? <br/> <br/> Sabrina: I still don’t know if I made it. <br/> <br/> Jim: When do you think you’ll know? <br/> <br/> Sabrina: I’m not sure. I want to call the club leader and find<gap>out</gap> , but I’m too nervous. <br/> <br/> Jim: Did you swim well? <br/> <br/> Sabrina: I swam really slowly at first, and I had trouble keeping<gap>up</gap><gap>with</gap> the other swimmers. <br/> <br/> Jim: Oh … <br/> <br/> Sabrina: But near the end of the race I sped<gap>up</gap> . <br/> <br/> Jim: What happened next? <br/> <br/> Sabrina: I had the lead, but then I gave<gap>it</gap><gap>up</gap> in the last minute. I came in second. <br/> <br/> Jim: Second is a good result, and it’s great that you took the challenge<gap>on</gap> . <br/> <br/> Sabrina: It might not be good enough to make<gap>it</gap><gap>into</gap> the club. <br/> <br/> Jim: I think you’ve got a great chance. But even if you don’t, keep<gap>at</gap> it. You’re a great swimmer. <br/> <br/> Sabrina: I’ll see. I hope so. <br/> <br/>",
-                    "PointsAchieved": "1"
+                    "AnswerContent": "<p>This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;babysitter:&nbsp;<gap>d</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;dog&nbsp;walker: <gap>Arturo</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;tutor:&nbsp;<gap>Loto</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;to&nbsp;do&nbsp;the&nbsp;laundry: <gap>Mamello</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;gardener: <gap>Andor</gap><br /><br />&nbsp;</p>"
                 }
             },
             {
-                "Title": "How old is Michael?",
+                "Title": "",
                 "Stimulus": "",
                 "Response": {
-                    "ItemContent": "Jim: Did you try<gap>out</gap><gap>for</gap> the swimming club? <br/> <br/> Sabrina: Yeah, on Saturday. <br/> <br/> Jim: And? <br/> <br/> Sabrina: I still don’t know if I made it. <br/> <br/> Jim: When do you think you’ll know? <br/> <br/> Sabrina: I’m not sure. I want to call the club leader and find<gap>out</gap> , but I’m too nervous. <br/> <br/> Jim: Did you swim well? <br/> <br/> Sabrina: I swam really slowly at first, and I had trouble keeping<gap>up</gap><gap>with</gap> the other swimmers. <br/> <br/> Jim: Oh … <br/> <br/> Sabrina: But near the end of the race I sped<gap>up</gap> . <br/> <br/> Jim: What happened next? <br/> <br/> Sabrina: I had the lead, but then I gave<gap>it</gap><gap>up</gap> in the last minute. I came in second. <br/> <br/> Jim: Second is a good result, and it’s great that you took the challenge<gap>on</gap> . <br/> <br/> Sabrina: It might not be good enough to make<gap>it</gap><gap>into</gap> the club. <br/> <br/> Jim: I think you’ve got a great chance. But even if you don’t, keep<gap>at</gap> it. You’re a great swimmer. <br/> <br/> Sabrina: I’ll see. I hope so. <br/> <br/>",
+                    "ItemContent": "<p>This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;babysitter:&nbsp;<gap>Helga</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;dog&nbsp;walker: <gap>Arturo</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;tutor:&nbsp;<gap>Loto</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;to&nbsp;do&nbsp;the&nbsp;laundry: <gap>Mamello</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;gardener: <gap>Andor</gap><br /><br />&nbsp;</p>",
                     "Fill": [
-                        "out",
-                        "for",
-                        "up",
-                        "with",
-                        "it",
-                        "on",
-                        "into",
-                        "at",
-                        "hope",
-                        "so"
+                        "Helga",
+                        "Arturo",
+                        "Loto",
+                        "Mamello",
+                        "Andor"
                     ],
-                    "AnswerContent": "Jim: Did you try<gap>with</gap><gap>in</gap> the swimming club? <br/> <br/> Sabrina: Yeah, on Saturday. <br/> <br/> Jim: And? <br/> <br/> Sabrina: I still don’t know if I made it. <br/> <br/> Jim: When do you think you’ll know? <br/> <br/> Sabrina: I’m not sure. I want to call the club leader and find<gap>out</gap> , but I’m too nervous. <br/> <br/> Jim: Did you swim well? <br/> <br/> Sabrina: I swam really slowly at first, and I had trouble keeping<gap>up</gap><gap>with</gap> the other swimmers. <br/> <br/> Jim: Oh … <br/> <br/> Sabrina: But near the end of the race I sped<gap>up</gap> . <br/> <br/> Jim: What happened next? <br/> <br/> Sabrina: I had the lead, but then I gave<gap>it</gap><gap>up</gap> in the last minute. I came in second. <br/> <br/> Jim: Second is a good result, and it’s great that you took the challenge<gap>on</gap> . <br/> <br/> Sabrina: It might not be good enough to make<gap>it</gap><gap>into</gap> the club. <br/> <br/> Jim: I think you’ve got a great chance. But even if you don’t, keep<gap>at</gap> it. You’re a great swimmer. <br/> <br/> Sabrina: I’ll see. I hope so. <br/> <br/>",
-                    "PointsAchieved": "1"
+                    "AnswerContent": "<p>This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;babysitter:&nbsp;<gap>d</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;dog&nbsp;walker: <gap>Arturo</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;tutor:&nbsp;<gap>Loto</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;to&nbsp;do&nbsp;the&nbsp;laundry: <gap>Mamello</gap><br />This&nbsp;teenager&nbsp;helps&nbsp;as&nbsp;a&nbsp;gardener: <gap>xxx</gap><br /><br />&nbsp;</p>"
                 }
             }
         ]
