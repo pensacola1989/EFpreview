@@ -72,11 +72,33 @@ Preview.GapFillWithOptionalStimulus = function (data) {
 				var imgSrc = $.inArray(index,falseArr) != -1 ? '../images/close_btn.png' : '../images/ok_btn.png';
 				$('<div></div>').addClass('float_anwer').html('<img src="' + imgSrc + '"/>').css(css).appendTo('body');
 			});
-			// check the answer right or not.
+			var disTpl = '<input class="gaps" readonly="true" type="text" style="width: 49px;" value="{data}">';
+			var disArr = getDis();
+			if(disArr.length) {
+				$.each(disArr,function (index,dis) {
+					$(disTpl.replace('{data}',dis)).appendTo('.gap_dis');
+				});
+			}
 		}
 
-		function checkAnswer () {
-			
+		function getDis () {
+			// var rightFill = $('<div>' + _content.Questions[Preview.index].Response.ItemContent + '</div>').find('gap');
+			var answerFill = $('<div>' + _content.Questions[Preview.index].Response.AnswerContent + '</div>').find('gap');
+			var totalFills = _content.Questions[Preview.index].Response.Fill;
+			var answerRet = [], disArr = [];
+
+			$.each(answerFill,function (index,fill) {
+				var html = $(fill).html();
+				answerRet.push(html);
+			})
+
+			$.each(totalFills,function (index,fill) {
+				if($.inArray(fill,answerRet) == -1) {
+					disArr.push(fill);
+				}
+			});
+			console.log(disArr);
+			return disArr;
 		}
 
 		function init () {

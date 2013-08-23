@@ -16,7 +16,10 @@ Preview.MatchWithMultipleStimuli = function (data) {
 	 ,	drpAudio_TPL = '<div class="dropzone_item audio_item"><img class="m_play_btn" url="{data}" src="../images/stiPlay_btn.png"/><div class="audio_answer"><img src="{src}"/></div></div>'
 	 ,	stitext_TPL = '<div class="stimulus_item txt_item"><div class="sti_textarea">{data}</div></div>'
 	 ,	jPlayer = '<div id="jquery_jplayer_1" class="jp-jplayer"></div>'
-	 ,	stiAudio_TPL = '<div class="stimulus_item audio_item"><img class="m_play_btn" url="{data}" src="../images/stiPlay_btn.png"/></div>';
+	 ,	stiAudio_TPL = '<div class="stimulus_item audio_item"><img class="m_play_btn" url="{data}" src="../images/stiPlay_btn.png"/></div>'
+	 ,	disTxt_TPL = '<div class="dropzone_item txt_item"><div class="dropzone_textarea">{data}</div></div>'
+	 ,	disImg_TPL = '<div class="dropzone_item img_item"><img src="{data}"/></div>'
+	 ,	disAudio_TPL = '<div class="dropzone_item audio_item"><img class="m_play_btn" url="{data}" src="../images/stiPlay_btn.png"/></div>';
 
 	return (function () {
 		
@@ -36,7 +39,10 @@ Preview.MatchWithMultipleStimuli = function (data) {
 
 			var content = '';
 			$.each(drpSti,function (index,drp) {
-				content += getTPL(type).replace('{data}',drp.ItemContent);
+				var data = (type == 'image' || type == 'audio') 
+					? _common.getAbsUrl(drp.ItemContent) 
+					: drp.ItemContent;
+				content += getTPL(type).replace('{data}',data);
 			});
 			$root.find(STIMULUS_INSIDE_C).html(content);
 		}
@@ -72,6 +78,52 @@ Preview.MatchWithMultipleStimuli = function (data) {
 				});
 		}
 
+		/*
+		*	@sti--> stiArray
+		*	@res--> resArray
+		* 	@return --> disArray
+		*/
+		function getDis(src,tgt) {
+			var srcIdArr = [], dis = [];
+			for(var s in src) {
+			   srcIdArr.push(src[s].ResponseId); 
+			}
+
+			for(var t in tgt) {
+			    if($.inArray(tgt[t].Id,srcIdArr) === -1) {
+			      dis.push(tgt[t]);
+			    }
+			}
+			return dis;
+		}
+
+		function renderDis () {
+			var sti = data.Content.Questions[0].Stimuli;
+			var res = data.Content.Questions[0].Responses;
+			var disArr = getDis(sti,res);
+			var type = data.Content.Questions[0].ResponseItemType.toLowerCase();
+			var getTPL = function (type) {
+				var ret = {};
+				ret['text'] = disTxt_TPL;
+				ret['image'] = disImg_TPL;
+				ret['audio'] = disAudio_TPL;
+				return ret[type] || '';
+			};
+
+
+			if(disArr.length) {
+				var content = '';
+				$.each(disArr,function (index,dis) {
+					var data = (type == 'image' || type == 'audio') 
+					? _common.getAbsUrl(dis.ItemContent) 
+					: dis.ItemContent;
+					content += getTPL(type).replace('{data}',data);
+
+				});
+				$('.distracotr_zone').html(content);
+			}
+		}
+
 		function renderDropzone () {
 			var question = data.Content.Questions[0];
 			var drpStimulus = question.DropzoneStimuli || question.Stimuli;
@@ -87,15 +139,14 @@ Preview.MatchWithMultipleStimuli = function (data) {
 			};
 
 			var content = '';
-			// $.each(responses,function (index,rsp) {
-			// 	var targetSti = drpStimulus[index];
-			// 	var src = targetSti.ResponseId == targetSti.AnswerId ? '../images/ok_btn.png' : '../images/close_btn.png';
-			// 	content += getTPL(type).replace('{data}',rsp.ItemContent).replace('{src}',src);
-			// });
+
 			$.each(drpStimulus,function (index,drp) {
 				var targetRes = responses[index];
 				var src = drp.ResponseId == drp.AnswerId ? '../images/ok_btn.png' : '../images/close_btn.png';
-				content += getTPL(type).replace('{data}',responses[index].ItemContent).replace('{src}',src);
+				var data = (type == 'image' || type == 'audio') 
+					? _common.getAbsUrl(responses[index].ItemContent) 
+					: responses[index].ItemContent;
+				content += getTPL(type).replace('{data}',data).replace('{src}',src);
 			});
 			$root.find(DROPZONE_C).html(content);
 		}
@@ -103,6 +154,7 @@ Preview.MatchWithMultipleStimuli = function (data) {
 		function init () {
 			_common.render(data,null);
 		//	_common.renderLeftSti(data);
+			renderDis();
 			renderStiInside();
 			renderDropzone();
 			bindEvent();

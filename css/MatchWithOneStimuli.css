@@ -37,3 +37,4 @@ td{width:100px;height:50px;margin:10px;padding:5px;}
 .audio_answer{height:70px;text-align:center;}
 .audio_answer img{margin-left:20px;margin-top:100px;height:30px;}
 .multiple{height:560px;width:600px;margin-right:50px;margin-top:30px;margin:auto;margin-top:100px;}
+.distracotr_zone{border: 1px solid #ecf5fa;height: 140px;padding: 10px;box-shadow: inset 0 0 1px 1px #999;background-color: #ecf5fa;border-radius: 5px;}

@@ -10,7 +10,7 @@ body{font-family:Arial;}
 .common_header{height:100px;background-color:#409fcf;color:#FFF;font-weight:noraml;}
 .header_ins{margin:auto;height:40px;line-height:40px;text-align:center;font-size:15px;}
 .header_step{height:60px;line-height:60px;text-align:center;font-size:20px;}
-.common_body{min-height:560px;overflow:hidden;}
+.common_body{min-height:460px;overflow:hidden;}
 
 .common_footer{height:80px;margin:10px;}
 .footer_left{border:1px solid #409fcf ;float:left;height:58px;width:58px;background:url('../images/pre_btn.png') no-repeat #409fcf 20px 20px;border-radius:58px;cursor:pointer;}
@@ -45,8 +45,8 @@ body{font-family:Arial;}
 .jp-mute{border: 1px solid #55b68a;text-align: center;background-color: #55b68a;width: 50px;}
 .jp-unmute{border: 1px solid orange;text-align: center;background-color: orange;width: 50px;}
 
-.choice_sti{float:left;width:280px;height:560px;margin-left:50px;margin-top:30px;}
-.choice_res{float:right;min-height:560px;width:600px;margin-right:50px;margin-top:30px;overflow:hidden;}
+.choice_sti{float:left;width:280px;min-height:360px;margin-left:50px;margin-top:30px;overflow: hidden;}
+.choice_res{float:right;min-height:360px;width:600px;margin-right:50px;margin-top:30px;overflow:hidden;}
 .choice_sti img{max-width:280px;}
 
-.sti_text{border:none;border-bottom:2px solid #ec923b;height:500px;/*overflow:scroll;*/width:250px;border-top:2px solid #b4d6eb;padding:10px;font-size:14px;/*color:#409fcf;*/}
+.sti_text{border:none;border-bottom:2px solid #ec923b;height:360px;/*overflow:scroll;*/width:250px;border-top:2px solid #b4d6eb;padding:10px;font-size:14px;color:#409fcf;}

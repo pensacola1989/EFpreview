@@ -29,6 +29,7 @@ Preview.SequencingWithOptionalStimulus = function (data) {
 
 		function init () {
 			renderRsp();
+			_common.render(data,function(){});
 			_common.renderLeftSti(data);
 		}
 

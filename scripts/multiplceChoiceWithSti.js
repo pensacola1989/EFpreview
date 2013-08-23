@@ -1,7 +1,7 @@
-// var Preview = Preview || {};
 Preview.multipleChoice =  Preview.multipleChoice || {};
 
 $(document).ready(function(){
+	Preview.Common.loadData('../data/3.MultipleChoiceWithStimulusWithAnswers.json',Preview.multipleChoice);
 
 	//--------------------testing-----------------------
     // $("#jquery_jplayer_1").jPlayer({
@@ -14,56 +14,21 @@ $(document).ready(function(){
     //     swfPath: "http://jplayer.org/latest/js",
     //     supplied: "mp3, oga"
     // });
-
+	// $.ajax({
+	// 	url:'../data/3.MultipleChoiceWithStimulusWithAnswers.json',
+	// 	type: 'GET'
+	// }).success(function (data) {
+	// 	Preview.multipleChoice(data);		
+	// }).error(function (err) {
+	// 	console.log(err);
+	// });
 	//--------------------------------------------------
-
-	$.ajax({
-		url:'../data/3.MultipleChoiceWithStimulusWithAnswers.json',
-		type: 'GET'
-	}).success(function (data) {
-		Preview.multipleChoice(data);		
-	}).error(function (err) {
-		console.log(err);
-	});
 });
 
 Preview.multipleChoice = function (data) {
 	var common = Preview.Common;
 
 	return (function () {
-
-		/*
-		* if sti for all，do not render stimulus per time.
-		* else render per time
-		*/
-		function renderStimulus () {
-			var isForAll = false
-			, $stiRoot = $('.choice_sti')
-			, imgTemplate = '<div class="sti_img"><img src="{src}"/></div>'
-			, txtTemplate = '<div class="sti_text"><textarea readonly="true">{text}</textarea></div>'
-			, type = data.Content.StimulusItemType.toLowerCase()
-			, stimulusArr = []
-			, questions = data.Content.Questions
-			, isForAll = data.Content.Stimulus != '' ? true : false;
-			
-			for(var i = 0; i < questions.length; i++) {
-				var ret = isForAll 
-						? data.Content.Stimulus
-						: questions[i].Stimulus;
-
-				stimulusArr.push(ret);
-			}
-
-			if(type == 'image') {
-				var content = imgTemplate.replace('{src}',stimulusArr[Preview.index]);
-				$stiRoot.html(content);	
-			} else if(type == 'text') {
-				var content = txtTemplate.replace('{text}','fdsfdsfsfsdfsdfsdfsdf');
-				$stiRoot.html(content);
-			} else if(type == 'audio') {
-				Preview.Common.jpAudio(stimulusArr[Preview.index]);
-			}
-		}
 
 		function renderReponse () {
 			var $resRoot = $('.choice_res')
@@ -94,11 +59,19 @@ Preview.multipleChoice = function (data) {
 					content += IMGTEMPLATE.replace('{select}',cls)
 											.replace('{tagsrc}',src)
 											.replace('{show}',show)
-											.replace('{src}',res.ItemContent);
+											.replace('{src}',Preview.Common.getAbsUrl(res.ItemContent));
 				}
 
 			});
 			$resRoot.html(content).show();
+
+
+			var $header = $('.common_header')
+			 ,	C_HEADER_STEP = '.header_step'
+			 , questions = data.Content.Questions
+			 , retContent = questions.length > 1 ? questions[index].Title : questions[0].Title;
+
+			$header.find(C_HEADER_STEP).html(retContent);
 		}
 
 		this.init = function () {

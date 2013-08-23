@@ -13,35 +13,35 @@
             {
                 "Title": "Listen and match the pictures.",
                 "StimulusItemType": "Audio",
-                "Stimulus": "http://10.128.34.190/ActivityResources/16021/a_MatchWithOneStimuli39676963980309665.mp3",
+                "Stimulus": "/ActivityResources/16021/a_MatchWithOneStimuli39676963980309665.mp3",
                 "DropzoneStimulusItemType": "Image",
                 "DropzoneStimuli": [
                     {
-                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
+                        "ItemContent": "/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "1",
                         "ResponseId": "1",
                         "AnswerId": "1"
                     },
                     {
-                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
+                        "ItemContent": "/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "2",
                         "ResponseId": "2",
                         "AnswerId": "3"
                     },
                     {
-                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
+                        "ItemContent": "/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "3",
                         "ResponseId": "3",
                         "AnswerId": "2"
                     },
                     {
-                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
+                        "ItemContent": "/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "4",
                         "ResponseId": "4",
                         "AnswerId": "4"
                     },
                     {
-                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
+                        "ItemContent": "/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "5",
                         "ResponseId": "5",
                         "AnswerId": "5"
@@ -50,27 +50,27 @@
                 "ResponseItemType": "Image",
                 "Responses": [
                     {
-                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
+                        "ItemContent": "/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "1"
                     },
                     {
-                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
+                        "ItemContent": "/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "2"
                     },
                     {
-                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
+                        "ItemContent": "/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "3"
                     },
                     {
-                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
+                        "ItemContent": "/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "4"
                     },
                     {
-                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
+                        "ItemContent": "/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "5"
                     },
                     {
-                        "ItemContent": "http://10.128.34.190/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
+                        "ItemContent": "/ActivityResources/16096/a_MatchWithOneStimuli6665432299487293.png",
                         "Id": "6"
                     }
                 ]

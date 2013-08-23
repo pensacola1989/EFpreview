@@ -2,7 +2,23 @@ var Preview = Preview || {};
 
 Preview.Common = Preview.Common || {};
 Preview.index = 0;
+Preview.urlPrefix = 'http://10.128.34.190';
 Preview.template = {};
+
+Preview.Common.getAbsUrl = function (data) {
+	return Preview.urlPrefix + data;
+};
+
+
+/*
+*	@sti--> stiArray
+*	@res--> resArray
+* 	@return --> disArray
+*/
+Preview.Common.getDis = function (sti,res) {
+
+}
+
 Preview.Common.loadData = function (url,cb) {
 	$.ajax({
 		url: url,
@@ -150,6 +166,12 @@ Preview.Common.render = function (data,callback) {
 	var renderHeader = function () {
 		var content = data.Common.Instruction;
 		$header.find(C_HEADER_INS).html(content);
+
+		var questions = data.Content.Questions;
+		if(questions.length == 1) {
+			var retContent = questions.length > 1 ? questions[Preview.index].Title : questions[0].Title;
+			$header.find(C_HEADER_STEP).html(retContent);
+		}
 	};
 
 	
@@ -167,8 +189,6 @@ Preview.Common.render = function (data,callback) {
 
 	init();
 }
-
-
 
 Preview.Common.renderLeftSti = function (data) {
 	var isForAll = false
@@ -203,21 +223,15 @@ Preview.Common.renderLeftSti = function (data) {
 	}
 
 	var template = getLeftTempalte(type);
+	var data = (type == 'image' || type == 'audio') 
+					? Preview.Common.getAbsUrl(stimulusArr[Preview.index]) 
+					: stimulusArr[Preview.index];
 	if(template && typeof template !== 'function') {
-		var content = template.replace('{src}',stimulusArr[Preview.index]);
+		var content = template.replace('{src}',data);
 	} else {
-		template(stimulusArr[Preview.index]);
+		template(data);
 	}
 	$stiRoot.html(content);
-	// if(type == 'image') {
-	// 	var content = imgTemplate.replace('{src}',stimulusArr[Preview.index]);
-	// 	$stiRoot.html(content);	
-	// } else if(type == 'text') {
-	// 	var content = txtTemplate.replace('{text}','fdsfdsfsfsdfsdfsdfsdf');
-	// 	$stiRoot.html(content);
-	// } else if(type == 'audio') {
-	// 	Preview.Common.jpAudio(stimulusArr[Preview.index]);
-	// }
 }
 
 Preview.Common.renderDrpAudio = function (drpSti) {

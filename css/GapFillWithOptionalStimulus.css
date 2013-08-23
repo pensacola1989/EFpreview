@@ -12,8 +12,9 @@
 .para{border:1px solid red;overflow:hidden;float:left;height:55px;margin:10px;line-height:55px;}
 
 .article{line-height:10px;}
-.article input{text-align:center;font-family:Arial;font-size:14px;color:#FFF;height:40px;margin:10px;background:url('../images/dragger.png') no-repeat center 10px #409fcf;min-width:100px;border:none;padding:5px;border-radius:5px;-webkit-box-shadow: 2px 1px 2px rgba(50, 50, 50, 0.75);
+.gaps,.article input{text-align:center;font-family:Arial;font-size:14px;color:#FFF;height:40px;margin:10px;background:url('../images/dragger.png') no-repeat center 10px #409fcf;min-width:100px;border:none;padding:5px;border-radius:5px;-webkit-box-shadow: 2px 1px 2px rgba(50, 50, 50, 0.75);
 -moz-box-shadow:    2px 1px 2px rgba(50, 50, 50, 0.75);
 box-shadow:         2px 1px 2px rgba(50, 50, 50, 0.75);}
 
 .float_anwer img{width:30px;}
+.gap_dis{border: 1px solid #ecf5fa;height: 140px;padding: 10px;box-shadow: inset 0 0 1px 1px #999;background-color: #ecf5fa;border-radius: 5px;float:right;margin-top:100px;width:600px;}

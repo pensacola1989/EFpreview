@@ -9,11 +9,28 @@ Preview.ComplexCategorization = function (data) {
 	 ,	$root = $('.table').find('tbody')
 	 ,	_columTitle_tpl = '<td class="tableTitle">{data}</td>'
 	 ,	_content_tpl = '<td class="tableContent"><div class="content_area">{data}</div><div class="tbl_answer"><img style="height:30px;width:30px;" src="{src}"/></div></td>'
+	 ,	_dis_tpl = '<td class="tableContent"><div class="content_area">{data}</div></td>'
 	 ,	_responses = data.Content.Questions[0].Responses
 	 ,	_responseFills = data.Content.Questions[0].ResponseFill;
 
 	return (function () {
 		
+		function renderDis () {
+			var ret = [];
+			$.each(_responseFills,function (index,fill) {
+				if(fill.ParentId == '-1') {
+					ret.push(fill)
+				}
+			});
+			if(ret.length) {
+				var content = '';
+
+				$.each(ret,function (index,r) {
+					content += _dis_tpl.replace('{data}',r.ItemContent);
+				});
+				$('.cate_dis').html(content);
+			}
+		}
 
 		function getTpl (type) {
 			var ret = {};
@@ -69,6 +86,7 @@ Preview.ComplexCategorization = function (data) {
 			_common.renderLeftSti(data);
 			renderTable();
 			checkAnswer();
+			renderDis();
 		}
 
 		init();
