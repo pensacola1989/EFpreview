@@ -21,7 +21,7 @@ Preview.SimpleCategorization = function (data) {
 			var fills = data.Content.Questions[0].ResponseFills;
 			var unSelectedArr = [];
 			$.each(fills,function (index,fill) {
-				if(fill.ResponseCategoryId == -1)
+				if(fill.CategoryId == -1)
 					unSelectedArr.push(fill);
 			});
 			if(unSelectedArr.length) {
@@ -48,7 +48,7 @@ Preview.SimpleCategorization = function (data) {
 			if(_responseFills.length) {
 				var content = '';
 				$.each(_responseFills,function  (index,fill) {
-					if(fill.Isfixed != 'false') {
+					if(fill.Isfixed != 'false' && fill.ResponseCategoryId != -1) {
 						var isCorrect = fill.CategoryId == fill.ResponseCategoryId ? '../images/ok_btn.png' : '../images/close_btn.png';
 						content = _categoryItem_tpl.replace('{data}',unescape(fill.ItemContent)).replace('{data}',unescape(fill.ItemContent)).replace('{src}',isCorrect);
 						$('.category').eq(fill.CategoryId - 1).append(content);
